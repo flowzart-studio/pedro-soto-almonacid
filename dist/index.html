@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Pedro Soto transforma problemas técnicos y operativos en soluciones concretas.">
+    <meta name="theme-color" content="#0c1114">
+    <meta name="color-scheme" content="dark light">
+    <title>Pedro Soto | Ingeniería, proyectos y soluciones</title>
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='10' fill='%230c1114'/%3E%3Cpath d='M18 46V18h16c8 0 13 4 13 11s-5 11-13 11H25v6H18zm7-13h9c4 0 6-1 6-4s-2-4-6-4h-9v8z' fill='%23d69a52'/%3E%3C/svg%3E">
+    <link rel="stylesheet" href="css/styles.css?v=0.1.0-narrative">
+    <script defer src="js/app.js?v=0.1.0-narrative"></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Saltar al contenido</a>
+    <header class="site-header" data-header>
+      <div class="shell nav-wrap">
+        <a class="brand" href="#inicio" aria-label="Pedro Soto, inicio">
+          <span class="brand-mark" aria-hidden="true">PS</span>
+          <span data-bind="identity.name">Pedro Soto</span>
+        </a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+          <span class="sr-only">Abrir menú</span><span></span><span></span>
+        </button>
+        <nav id="site-nav" class="site-nav" aria-label="Navegación principal">
+          <a href="#capacidades">Capacidades</a>
+          <a href="#proceso">Cómo trabajo</a>
+          <a href="#trabajos">Trabajos</a>
+          <a href="#proyectos">Proyectos</a>
+          <a href="#curriculum">CV</a>
+          <a href="#contacto">Contacto</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="hero" id="inicio" aria-labelledby="hero-title">
+        <div class="shell hero-grid">
+          <div class="hero-copy reveal">
+            <p class="eyebrow" data-bind="hero.eyebrow">PERFIL PROFESIONAL · SITIO 001</p>
+            <h1 id="hero-title" data-bind="identity.name">Pedro Soto</h1>
+            <p class="hero-disciplines" data-bind="hero.disciplines">Ingeniería · Proyectos · Soluciones</p>
+            <p class="hero-lede" data-bind="hero.valueProposition">Propuesta profesional provisional: diagnóstico, diseño e implementación de soluciones técnicas y digitales.</p>
+            <div class="hero-actions">
+              <a class="button button-primary" href="#trabajos">Ver trabajos <span aria-hidden="true">↘</span></a>
+              <a class="button button-ghost" href="#contacto">Contacto</a>
+            </div>
+          </div>
+
+          <div class="hero-visual reveal" aria-label="Espacio reservado para fotografía profesional">
+            <div class="technical-frame" aria-hidden="true">
+              <span class="frame-index">FIG. 001 / PERFIL</span>
+              <span class="frame-axis axis-x"></span><span class="frame-axis axis-y"></span>
+              <div class="portrait-placeholder">
+                <strong>PS</strong>
+                <span data-bind="hero.photoLabel">Fotografía profesional pendiente</span>
+              </div>
+              <span class="frame-note">RETRATO / 04:05</span>
+            </div>
+          </div>
+        </div>
+        <ol class="shell hero-process" aria-label="Proceso de trabajo resumido">
+          <li>Observar</li><li>Diagnosticar</li><li>Diseñar</li><li>Implementar</li><li>Mejorar</li>
+        </ol>
+      </section>
+
+      <section class="section intro" id="perfil" aria-labelledby="about-title">
+        <div class="shell section-grid">
+          <div class="section-heading reveal">
+            <p class="section-number">01 / PERFIL</p>
+            <p class="eyebrow">PRESENTACIÓN</p>
+            <h2 id="about-title">Del problema a una solución que funciona.</h2>
+          </div>
+          <div class="intro-body reveal">
+            <p class="lead" data-bind="about.summary">Pedro aborda problemas técnicos y operativos con una mirada práctica, conectando análisis, diseño y ejecución.</p>
+            <p data-bind="about.detail">Presentación profesional pendiente de completar con antecedentes verificados y una descripción precisa de su experiencia.</p>
+            <p class="provisional-note"><span aria-hidden="true">✦</span> Texto provisional y editable desde el archivo de contenido.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-ink" id="capacidades" aria-labelledby="capabilities-title">
+        <div class="shell">
+          <div class="section-heading horizontal reveal">
+            <div>
+              <p class="section-number">02 / CAPACIDADES</p>
+              <p class="eyebrow">TRES MUNDOS, UN MISMO ENFOQUE</p>
+              <h2 id="capabilities-title">Capacidades conectadas por la forma de resolver.</h2>
+            </div>
+            <p data-bind="capabilitiesIntro">El contenido específico de cada área se incorporará cuando esté validado.</p>
+          </div>
+          <div class="capability-grid" data-list="capabilityWorlds"></div>
+        </div>
+      </section>
+
+      <section class="section process-section" id="proceso" aria-labelledby="process-title">
+        <div class="shell">
+          <div class="section-heading horizontal reveal">
+            <div>
+              <p class="section-number">03 / PROCESO</p>
+              <p class="eyebrow">CÓMO TRABAJO</p>
+              <h2 id="process-title">Un proceso práctico, de principio a mejora.</h2>
+            </div>
+            <p>La misma secuencia permite abordar una instalación, un producto digital o un prototipo sin inflar la metodología.</p>
+          </div>
+          <ol class="process-list" data-list="process"></ol>
+        </div>
+      </section>
+
+      <section class="section experience-section" id="experiencia" aria-labelledby="experience-title">
+        <div class="shell section-grid">
+          <div class="section-heading reveal">
+            <p class="section-number">04 / TRAYECTORIA</p>
+            <p class="eyebrow">EXPERIENCIA</p>
+            <h2 id="experience-title">La experiencia, situada en su contexto.</h2>
+          </div>
+          <div class="timeline" data-list="experience"></div>
+        </div>
+      </section>
+
+      <section class="section cases" id="trabajos" aria-labelledby="portfolio-title">
+        <div class="shell">
+          <div class="section-heading horizontal reveal">
+            <div>
+              <p class="section-number">05 / EVIDENCIA</p>
+              <p class="eyebrow">TRABAJOS Y CASOS</p>
+              <h2 id="portfolio-title">Trabajo documentado, no solo enumerado.</h2>
+            </div>
+            <p>Cada ficha está preparada para explicar el contexto, la intervención y el resultado sin mostrar campos innecesarios.</p>
+          </div>
+          <div class="case-list" data-list="portfolio"></div>
+        </div>
+      </section>
+
+      <section class="section projects" id="proyectos" aria-labelledby="projects-title">
+        <div class="shell">
+          <div class="section-heading horizontal reveal">
+            <div>
+              <p class="section-number">06 / INICIATIVAS</p>
+              <p class="eyebrow">PROYECTOS PROPIOS</p>
+              <h2 id="projects-title">Una herramienta empieza con algo observado.</h2>
+            </div>
+            <p>La tecnología queda como dato secundario; la historia principal es el problema que motivó cada solución.</p>
+          </div>
+          <div class="project-list" data-list="projects"></div>
+        </div>
+      </section>
+
+      <section class="section cv-section" id="curriculum" aria-labelledby="cv-title">
+        <div class="shell cv-panel reveal">
+          <div>
+            <p class="eyebrow">DOCUMENTO / CV</p>
+            <h2 id="cv-title">Trayectoria resumida, lista para compartir.</h2>
+            <p data-bind="cv.summary">El CV definitivo aún no está disponible. El archivo actual permite validar el flujo de descarga.</p>
+          </div>
+          <a class="button button-light" data-bind-href="cv.file" href="assets/cv/pedro-soto-cv-placeholder.pdf" download>Descargar CV en PDF <span aria-hidden="true">↓</span></a>
+        </div>
+      </section>
+
+      <section class="section contact" id="contacto" aria-labelledby="contact-title">
+        <div class="shell contact-grid">
+          <div class="reveal">
+            <p class="section-number">07 / CONTACTO</p>
+            <p class="eyebrow">CONVERSEMOS</p>
+            <h2 id="contact-title">¿Hay un problema que vale la pena resolver?</h2>
+          </div>
+          <div class="contact-card reveal">
+            <p data-bind="contact.note">Los datos de contacto están pendientes de incorporar.</p>
+            <div class="contact-links" data-list="contact"></div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="shell footer-grid">
+        <div><strong data-bind="identity.name">Pedro Soto</strong><span data-bind="hero.disciplines">Ingeniería · Proyectos · Soluciones</span></div>
+        <p>Sitio 001 / Perfil profesional</p>
+        <a href="#inicio">Volver arriba ↑</a>
+      </div>
+    </footer>
+
+    <noscript><p class="noscript">Este sitio necesita JavaScript para cargar el contenido profesional desde su archivo de configuración.</p></noscript>
+  </body>
+</html>
