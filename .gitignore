@@ -1,0 +1,20 @@
+# Capturas y páginas generadas de QA: permanecen locales.
+/output/qa/*
+!/output/qa/VALIDACION.md
+
+# Archivos temporales y cachés; no afectan fuentes ni documentación.
+*.log
+*.tmp
+*.swp
+*~
+__pycache__/
+.DS_Store
+Thumbs.db
+node_modules/
+
+# Credenciales locales: nunca incluir en el repositorio.
+.env
+.env.*
+!.env.example
+*.pem
+*.key

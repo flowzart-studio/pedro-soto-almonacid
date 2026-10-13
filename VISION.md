@@ -6,6 +6,10 @@ Un CV tradicional presenta antecedentes, pero comunica con dificultad la combina
 
 ## Propósito
 
+La identidad aprobada para v0.2 es **Pedro Soto Almonacid — Del análisis a la solución**. Sus tres áreas son Ingeniería y soluciones técnicas, Tecnología y desarrollo digital, y Diseño, fabricación y prototipado. El sitio se dirige a empresas, instituciones, empleadores y clientes con un tono profesional, humano y cercano.
+
+Flowzart Studio se incorpora como su espacio independiente de trabajo técnico y creativo para proyectos físicos y digitales, incluida la investigación y aplicación práctica de IA. Formación, certificaciones y resultados solo se comunicarán cuando estén confirmados. La estética oscura y técnica deberá apoyar la lectura y la evidencia real, sin exigir una experiencia 3D.
+
 El sitio de Pedro debe permitir que una persona comprenda rápidamente quién es, qué problemas técnicos y operativos puede convertir en soluciones concretas, qué evidencia existe y cómo contactarlo. Ingeniería, productos digitales y prototipado se entienden como expresiones de una misma forma de observar, diagnosticar, diseñar, implementar y mejorar. Debe crecer como una presencia profesional viva, no como un documento estático trasladado a HTML.
 
 ## Visión futura

@@ -85,8 +85,16 @@
       "intervention": "Acciones, decisiones y alcance pendientes de describir.",
       "result": "Resultado verificable pendiente de incorporar.",
       "images": [
-        { "src": "", "alt": "", "label": "Fotografía general del trabajo" },
-        { "src": "", "alt": "", "label": "Detalle técnico o proceso" }
+        {
+          "src": "",
+          "alt": "",
+          "label": "Fotografía general del trabajo"
+        },
+        {
+          "src": "",
+          "alt": "",
+          "label": "Detalle técnico o proceso"
+        }
       ],
       "tools": []
     },
@@ -103,7 +111,11 @@
       "intervention": "Trabajo realizado pendiente de validación.",
       "result": "Impacto, mejora o entregable pendiente de validación.",
       "images": [
-        { "src": "", "alt": "", "label": "Imagen antes, durante o después" }
+        {
+          "src": "",
+          "alt": "",
+          "label": "Imagen antes, durante o después"
+        }
       ],
       "tools": []
     }
@@ -151,5 +163,206 @@
     "linkedinUrl": "",
     "location": ""
   },
-  "social": []
+  "social": [],
+  "v02": {
+    "version": "0.2.0",
+    "stage": "Integración visual local; contenido de proyectos pendiente de documentar",
+    "identity": {
+      "name": "Pedro Soto Almonacid",
+      "concept": "Del análisis a la solución.",
+      "professionalTitle": "",
+      "audiences": [
+        "Empresas",
+        "Instituciones",
+        "Empleadores",
+        "Clientes"
+      ]
+    },
+    "presentation": {
+      "summary": "Pedro integra análisis técnico, diseño y ejecución para transformar necesidades en soluciones concretas.",
+      "detail": "Su actividad comprende ingeniería aplicada, desarrollo de aplicaciones, diseño digital, fabricación y prototipado."
+    },
+    "areas": [
+      "Ingeniería y soluciones técnicas",
+      "Tecnología y desarrollo digital",
+      "Diseño, fabricación y prototipado"
+    ],
+    "theme": {
+      "palette": {
+        "background": "#151A1F",
+        "surface": "#252D34",
+        "accent": "#C8926E",
+        "text": "#F2F3F1",
+        "textSecondary": "#9AA7B2"
+      },
+      "suggestedTypography": {
+        "sans": "IBM Plex Sans",
+        "mono": "IBM Plex Mono"
+      },
+      "applied": true
+    },
+    "studio": {
+      "name": "Flowzart Studio",
+      "description": "Espacio independiente de trabajo técnico y creativo de Pedro, desde donde desarrolla proyectos físicos y digitales.",
+      "presentation": "En Flowzart Studio conecto análisis, diseño y ejecución para desarrollar proyectos físicos y digitales.",
+      "activities": [
+        "Ingeniería y análisis de factibilidad",
+        "Diseño técnico y creativo",
+        "Desarrollo de software y herramientas digitales",
+        "Fabricación de productos y prototipos",
+        "Investigación y aplicación práctica de inteligencia artificial"
+      ],
+      "aiPractice": "Estudio y experimento continuamente con tecnologías de inteligencia artificial, integrándolas en diferentes etapas de mis proyectos."
+    },
+    "education": [],
+    "trajectory": [],
+    "featuredPortfolio": [
+      {
+        "id": "ING-001",
+        "title": "Levantamiento topográfico de terreno urbano, Puerto Varas",
+        "category": "Ingeniería",
+        "workType": "",
+        "location": "Puerto Varas",
+        "context": "",
+        "solution": "",
+        "participation": "",
+        "tools": [],
+        "results": [],
+        "status": "",
+        "images": [],
+        "links": [],
+        "evidence": [],
+        "editorialStatus": "Pendiente de documentar"
+      },
+      {
+        "id": "ING-002",
+        "title": "Proyecto de subdivisión predial rural",
+        "category": "Ingeniería",
+        "workType": "",
+        "location": "",
+        "context": "",
+        "solution": "",
+        "participation": "",
+        "tools": [],
+        "results": [],
+        "status": "",
+        "images": [],
+        "links": [],
+        "evidence": [],
+        "editorialStatus": "Pendiente de documentar"
+      },
+      {
+        "id": "TEC-001",
+        "title": "Punto Deportivo Digital",
+        "category": "Tecnología",
+        "workType": "",
+        "location": "",
+        "context": "",
+        "solution": "",
+        "participation": "",
+        "tools": [],
+        "results": [],
+        "status": "",
+        "images": [],
+        "links": [],
+        "evidence": [],
+        "editorialStatus": "Pendiente de documentar",
+        "legacyAliases": [
+          "Punto Digital"
+        ],
+        "legacyReference": "PRY-001"
+      },
+      {
+        "id": "TEC-002",
+        "title": "Costeo",
+        "category": "Tecnología",
+        "workType": "",
+        "location": "",
+        "context": "",
+        "solution": "",
+        "participation": "",
+        "tools": [],
+        "results": [],
+        "status": "",
+        "images": [],
+        "links": [],
+        "evidence": [],
+        "editorialStatus": "Pendiente de documentar"
+      },
+      {
+        "id": "DIS-001",
+        "title": "Productos personalizados",
+        "category": "Diseño",
+        "workType": "",
+        "location": "",
+        "context": "",
+        "solution": "",
+        "participation": "",
+        "tools": [],
+        "results": [],
+        "status": "",
+        "images": [],
+        "links": [],
+        "evidence": [],
+        "editorialStatus": "Pendiente de documentar"
+      },
+      {
+        "id": "DIS-002",
+        "title": "Dioramas y prototipado",
+        "category": "Diseño",
+        "workType": "",
+        "location": "",
+        "context": "",
+        "solution": "",
+        "participation": "",
+        "tools": [],
+        "results": [],
+        "status": "",
+        "images": [],
+        "links": [],
+        "evidence": [],
+        "editorialStatus": "Pendiente de documentar"
+      }
+    ],
+    "methodology": [
+      {
+        "title": "Explorar",
+        "description": "Entender el problema, su contexto y las necesidades de quienes lo enfrentan."
+      },
+      {
+        "title": "Evaluar",
+        "description": "Analizar la factibilidad, los recursos y las restricciones antes de elegir una dirección."
+      },
+      {
+        "title": "Prototipar",
+        "description": "Dar forma a una primera solución física o digital para poner a prueba la idea."
+      },
+      {
+        "title": "Validar",
+        "description": "Revisar el comportamiento de la solución y ajustar a partir de lo observado."
+      },
+      {
+        "title": "Implementar",
+        "description": "Llevar la solución a la práctica y seguir mejorándola con evidencia de uso."
+      }
+    ],
+    "portrait": {
+      "src": "",
+      "alt": ""
+    },
+    "cv": {
+      "available": false,
+      "file": "",
+      "summary": "El CV definitivo está pendiente de incorporar."
+    },
+    "contact": {
+      "email": "",
+      "whatsapp": "",
+      "whatsappUrl": "",
+      "linkedinLabel": "",
+      "linkedinUrl": "",
+      "location": ""
+    },
+    "metadata": {}
+  }
 }

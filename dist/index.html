@@ -1,185 +1,34 @@
 <!doctype html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Pedro Soto transforma problemas técnicos y operativos en soluciones concretas.">
-    <meta name="theme-color" content="#0c1114">
-    <meta name="color-scheme" content="dark light">
-    <title>Pedro Soto | Ingeniería, proyectos y soluciones</title>
-    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='10' fill='%230c1114'/%3E%3Cpath d='M18 46V18h16c8 0 13 4 13 11s-5 11-13 11H25v6H18zm7-13h9c4 0 6-1 6-4s-2-4-6-4h-9v8z' fill='%23d69a52'/%3E%3C/svg%3E">
-    <link rel="stylesheet" href="css/styles.css?v=0.1.0-narrative">
-    <script defer src="js/app.js?v=0.1.0-narrative"></script>
-  </head>
-  <body>
-    <a class="skip-link" href="#main">Saltar al contenido</a>
-    <header class="site-header" data-header>
-      <div class="shell nav-wrap">
-        <a class="brand" href="#inicio" aria-label="Pedro Soto, inicio">
-          <span class="brand-mark" aria-hidden="true">PS</span>
-          <span data-bind="identity.name">Pedro Soto</span>
-        </a>
-        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
-          <span class="sr-only">Abrir menú</span><span></span><span></span>
-        </button>
-        <nav id="site-nav" class="site-nav" aria-label="Navegación principal">
-          <a href="#capacidades">Capacidades</a>
-          <a href="#proceso">Cómo trabajo</a>
-          <a href="#trabajos">Trabajos</a>
-          <a href="#proyectos">Proyectos</a>
-          <a href="#curriculum">CV</a>
-          <a href="#contacto">Contacto</a>
-        </nav>
-      </div>
-    </header>
-
-    <main id="main">
-      <section class="hero" id="inicio" aria-labelledby="hero-title">
-        <div class="shell hero-grid">
-          <div class="hero-copy reveal">
-            <p class="eyebrow" data-bind="hero.eyebrow">PERFIL PROFESIONAL · SITIO 001</p>
-            <h1 id="hero-title" data-bind="identity.name">Pedro Soto</h1>
-            <p class="hero-disciplines" data-bind="hero.disciplines">Ingeniería · Proyectos · Soluciones</p>
-            <p class="hero-lede" data-bind="hero.valueProposition">Propuesta profesional provisional: diagnóstico, diseño e implementación de soluciones técnicas y digitales.</p>
-            <div class="hero-actions">
-              <a class="button button-primary" href="#trabajos">Ver trabajos <span aria-hidden="true">↘</span></a>
-              <a class="button button-ghost" href="#contacto">Contacto</a>
-            </div>
-          </div>
-
-          <div class="hero-visual reveal" aria-label="Espacio reservado para fotografía profesional">
-            <div class="technical-frame" aria-hidden="true">
-              <span class="frame-index">FIG. 001 / PERFIL</span>
-              <span class="frame-axis axis-x"></span><span class="frame-axis axis-y"></span>
-              <div class="portrait-placeholder">
-                <strong>PS</strong>
-                <span data-bind="hero.photoLabel">Fotografía profesional pendiente</span>
-              </div>
-              <span class="frame-note">RETRATO / 04:05</span>
-            </div>
-          </div>
-        </div>
-        <ol class="shell hero-process" aria-label="Proceso de trabajo resumido">
-          <li>Observar</li><li>Diagnosticar</li><li>Diseñar</li><li>Implementar</li><li>Mejorar</li>
-        </ol>
-      </section>
-
-      <section class="section intro" id="perfil" aria-labelledby="about-title">
-        <div class="shell section-grid">
-          <div class="section-heading reveal">
-            <p class="section-number">01 / PERFIL</p>
-            <p class="eyebrow">PRESENTACIÓN</p>
-            <h2 id="about-title">Del problema a una solución que funciona.</h2>
-          </div>
-          <div class="intro-body reveal">
-            <p class="lead" data-bind="about.summary">Pedro aborda problemas técnicos y operativos con una mirada práctica, conectando análisis, diseño y ejecución.</p>
-            <p data-bind="about.detail">Presentación profesional pendiente de completar con antecedentes verificados y una descripción precisa de su experiencia.</p>
-            <p class="provisional-note"><span aria-hidden="true">✦</span> Texto provisional y editable desde el archivo de contenido.</p>
-          </div>
-        </div>
-      </section>
-
-      <section class="section section-ink" id="capacidades" aria-labelledby="capabilities-title">
-        <div class="shell">
-          <div class="section-heading horizontal reveal">
-            <div>
-              <p class="section-number">02 / CAPACIDADES</p>
-              <p class="eyebrow">TRES MUNDOS, UN MISMO ENFOQUE</p>
-              <h2 id="capabilities-title">Capacidades conectadas por la forma de resolver.</h2>
-            </div>
-            <p data-bind="capabilitiesIntro">El contenido específico de cada área se incorporará cuando esté validado.</p>
-          </div>
-          <div class="capability-grid" data-list="capabilityWorlds"></div>
-        </div>
-      </section>
-
-      <section class="section process-section" id="proceso" aria-labelledby="process-title">
-        <div class="shell">
-          <div class="section-heading horizontal reveal">
-            <div>
-              <p class="section-number">03 / PROCESO</p>
-              <p class="eyebrow">CÓMO TRABAJO</p>
-              <h2 id="process-title">Un proceso práctico, de principio a mejora.</h2>
-            </div>
-            <p>La misma secuencia permite abordar una instalación, un producto digital o un prototipo sin inflar la metodología.</p>
-          </div>
-          <ol class="process-list" data-list="process"></ol>
-        </div>
-      </section>
-
-      <section class="section experience-section" id="experiencia" aria-labelledby="experience-title">
-        <div class="shell section-grid">
-          <div class="section-heading reveal">
-            <p class="section-number">04 / TRAYECTORIA</p>
-            <p class="eyebrow">EXPERIENCIA</p>
-            <h2 id="experience-title">La experiencia, situada en su contexto.</h2>
-          </div>
-          <div class="timeline" data-list="experience"></div>
-        </div>
-      </section>
-
-      <section class="section cases" id="trabajos" aria-labelledby="portfolio-title">
-        <div class="shell">
-          <div class="section-heading horizontal reveal">
-            <div>
-              <p class="section-number">05 / EVIDENCIA</p>
-              <p class="eyebrow">TRABAJOS Y CASOS</p>
-              <h2 id="portfolio-title">Trabajo documentado, no solo enumerado.</h2>
-            </div>
-            <p>Cada ficha está preparada para explicar el contexto, la intervención y el resultado sin mostrar campos innecesarios.</p>
-          </div>
-          <div class="case-list" data-list="portfolio"></div>
-        </div>
-      </section>
-
-      <section class="section projects" id="proyectos" aria-labelledby="projects-title">
-        <div class="shell">
-          <div class="section-heading horizontal reveal">
-            <div>
-              <p class="section-number">06 / INICIATIVAS</p>
-              <p class="eyebrow">PROYECTOS PROPIOS</p>
-              <h2 id="projects-title">Una herramienta empieza con algo observado.</h2>
-            </div>
-            <p>La tecnología queda como dato secundario; la historia principal es el problema que motivó cada solución.</p>
-          </div>
-          <div class="project-list" data-list="projects"></div>
-        </div>
-      </section>
-
-      <section class="section cv-section" id="curriculum" aria-labelledby="cv-title">
-        <div class="shell cv-panel reveal">
-          <div>
-            <p class="eyebrow">DOCUMENTO / CV</p>
-            <h2 id="cv-title">Trayectoria resumida, lista para compartir.</h2>
-            <p data-bind="cv.summary">El CV definitivo aún no está disponible. El archivo actual permite validar el flujo de descarga.</p>
-          </div>
-          <a class="button button-light" data-bind-href="cv.file" href="assets/cv/pedro-soto-cv-placeholder.pdf" download>Descargar CV en PDF <span aria-hidden="true">↓</span></a>
-        </div>
-      </section>
-
-      <section class="section contact" id="contacto" aria-labelledby="contact-title">
-        <div class="shell contact-grid">
-          <div class="reveal">
-            <p class="section-number">07 / CONTACTO</p>
-            <p class="eyebrow">CONVERSEMOS</p>
-            <h2 id="contact-title">¿Hay un problema que vale la pena resolver?</h2>
-          </div>
-          <div class="contact-card reveal">
-            <p data-bind="contact.note">Los datos de contacto están pendientes de incorporar.</p>
-            <div class="contact-links" data-list="contact"></div>
-          </div>
-        </div>
-      </section>
-    </main>
-
-    <footer class="site-footer">
-      <div class="shell footer-grid">
-        <div><strong data-bind="identity.name">Pedro Soto</strong><span data-bind="hero.disciplines">Ingeniería · Proyectos · Soluciones</span></div>
-        <p>Sitio 001 / Perfil profesional</p>
-        <a href="#inicio">Volver arriba ↑</a>
-      </div>
-    </footer>
-
-    <noscript><p class="noscript">Este sitio necesita JavaScript para cargar el contenido profesional desde su archivo de configuración.</p></noscript>
-  </body>
-</html>
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Pedro integra análisis técnico, diseño y ejecución para transformar necesidades en soluciones concretas.">
+<meta name="theme-color" content="#151A1F"><meta name="color-scheme" content="dark">
+<title>Pedro Soto Almonacid | Del análisis a la solución.</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='8' fill='%23151A1F'/%3E%3Ctext x='10' y='42' font-size='30' font-family='monospace' fill='%23C8926E'%3EPS%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="css/styles.css?v=0.2.0"><script defer src="js/app.js?v=0.2.0"></script>
+</head>
+<body>
+<a class="skip-link" href="#main">Saltar al contenido</a>
+<header class="site-header"><div class="shell nav-wrap">
+<a class="brand" href="#inicio" aria-label="Pedro Soto Almonacid, inicio"><span class="brand-mark" aria-hidden="true">PS<span>.</span></span><span class="brand-name" data-bind="identity.name"><!-- content:bind:identity.name -->Pedro Soto Almonacid<!-- /content:bind:identity.name --></span></a>
+<button class="nav-toggle" hidden aria-expanded="false" aria-controls="site-nav">Menú <span aria-hidden="true">+</span></button>
+<nav id="site-nav" aria-label="Navegación principal"><a href="#perfil">Sobre mí</a><a href="#trabajos">Portafolio</a><a href="#flowzart">Flowzart Studio</a><a href="#curriculum">Trayectoria</a><a href="#contacto">Contacto ↗</a></nav>
+</div></header>
+<main id="main" tabindex="-1">
+<section id="inicio" class="hero" aria-labelledby="hero-title"><div class="shell">
+<div class="hero-top"><span class="eyebrow">INGENIERÍA / TECNOLOGÍA / DISEÑO</span><span class="mono quiet">PORTAFOLIO PROFESIONAL · 02</span></div>
+<div class="hero-grid"><div><p class="hero-name" data-bind="identity.name"><!-- content:bind:identity.name -->Pedro Soto Almonacid<!-- /content:bind:identity.name --></p><h1 id="hero-title" data-bind="identity.concept"><!-- content:bind:identity.concept -->Del análisis a la <span>solución.</span><!-- /content:bind:identity.concept --></h1><p class="hero-lede" data-bind="presentation.summary"><!-- content:bind:presentation.summary -->Pedro integra análisis técnico, diseño y ejecución para transformar necesidades en soluciones concretas.<!-- /content:bind:presentation.summary --></p><div class="actions"><a class="button primary" href="#trabajos">Explorar proyectos <span aria-hidden="true">↘</span></a><a class="text-link" href="#flowzart">Conocer Flowzart Studio <span aria-hidden="true">↗</span></a></div></div>
+<div class="technical-frame"><div class="frame-label mono">UNA MIRADA / TRES ÁREAS</div><div class="diagram" aria-hidden="true"><div class="diagram-cross"></div><div class="diagram-core">PS<span>ANÁLISIS → SOLUCIÓN</span></div><span class="node n1">ING</span><span class="node n2">TEC</span><span class="node n3">DIS</span></div><p>De una necesidad a una idea.<br>De una idea a algo que funciona.</p><span class="frame-footer mono">FÍSICO + DIGITAL</span></div></div>
+<div class="hero-bottom"><span>Un enfoque práctico, conectado y multidisciplinario.</span><a href="#proceso">Ver cómo trabajo <span aria-hidden="true">↓</span></a></div>
+</div></section>
+<section id="perfil" class="section" aria-labelledby="about-title"><div class="shell intro-grid"><div><p class="eyebrow">01 / SOBRE MÍ</p><h2 id="about-title">Conectar disciplinas.<br>Resolver necesidades.</h2></div><div><p class="lead" data-bind="presentation.summary"><!-- content:bind:presentation.summary -->Pedro integra análisis técnico, diseño y ejecución para transformar necesidades en soluciones concretas.<!-- /content:bind:presentation.summary --></p><p data-bind="presentation.detail"><!-- content:bind:presentation.detail -->Su actividad comprende ingeniería aplicada, desarrollo de aplicaciones, diseño digital, fabricación y prototipado.<!-- /content:bind:presentation.detail --></p><div id="portrait"></div></div></div></section>
+<section id="capacidades" class="section areas" aria-labelledby="areas-title"><div class="shell"><div class="section-head"><div><p class="eyebrow">02 / ÁREAS DE TRABAJO</p><h2 id="areas-title">Tres áreas.<br>Un mismo enfoque.</h2></div><p>Analizar, diseñar y construir.<br>Conectar lo físico y lo digital.</p></div><div class="area-grid" data-list="areas"><!-- content:list:areas --><article><span class="mono">01 / ING</span><h3>Ingeniería y soluciones técnicas</h3></article><article><span class="mono">02 / TEC</span><h3>Tecnología y desarrollo digital</h3></article><article><span class="mono">03 / DIS</span><h3>Diseño, fabricación y prototipado</h3></article><!-- /content:list:areas --></div></div></section>
+<section id="proceso" class="section" aria-labelledby="process-title"><div class="shell"><div class="section-head"><div><p class="eyebrow">03 / CÓMO TRABAJO</p><h2 id="process-title">La idea se pone a prueba.</h2></div><p>Cinco etapas para pasar de entender una necesidad a implementar una solución.</p></div><ol class="process-list" data-list="methodology"><!-- content:list:methodology --><li><span class="mono">01</span><h3>Explorar</h3><p>Entender el problema, su contexto y las necesidades de quienes lo enfrentan.</p></li><li><span class="mono">02</span><h3>Evaluar</h3><p>Analizar la factibilidad, los recursos y las restricciones antes de elegir una dirección.</p></li><li><span class="mono">03</span><h3>Prototipar</h3><p>Dar forma a una primera solución física o digital para poner a prueba la idea.</p></li><li><span class="mono">04</span><h3>Validar</h3><p>Revisar el comportamiento de la solución y ajustar a partir de lo observado.</p></li><li><span class="mono">05</span><h3>Implementar</h3><p>Llevar la solución a la práctica y seguir mejorándola con evidencia de uso.</p></li><!-- /content:list:methodology --></ol></div></section>
+<span id="proyectos" aria-hidden="true"></span><section id="trabajos" class="section portfolio" aria-labelledby="portfolio-title"><div class="shell"><div class="section-head"><div><p class="eyebrow">04 / PORTAFOLIO</p><h2 id="portfolio-title">Proyectos destacados.</h2></div><p>Seis fichas seleccionadas.<br>Los detalles y evidencias se incorporan a medida que se documentan.</p></div><div class="filters" hidden aria-label="Filtrar proyectos por área"><button type="button" data-filter="all" aria-pressed="true">Todos <span>06</span></button><button type="button" data-filter="Ingeniería" aria-pressed="false">Ingeniería</button><button type="button" data-filter="Tecnología" aria-pressed="false">Tecnología</button><button type="button" data-filter="Diseño" aria-pressed="false">Diseño</button></div><p id="filter-status" class="sr-only" role="status" aria-live="polite"></p><div class="project-grid" data-list="featuredPortfolio"><!-- content:list:featuredPortfolio --><article class="project-card" id="ING-001" data-category="Ingeniería"><div class="project-meta"><span>ING-001</span><span>Ingeniería</span></div><h3>Levantamiento topográfico de terreno urbano, Puerto Varas</h3><p class="project-location">Puerto Varas</p><p class="editorial-note">Ficha en documentación</p></article><article class="project-card" id="ING-002" data-category="Ingeniería"><div class="project-meta"><span>ING-002</span><span>Ingeniería</span></div><h3>Proyecto de subdivisión predial rural</h3><p class="editorial-note">Ficha en documentación</p></article><article class="project-card" id="TEC-001" data-category="Tecnología"><div class="project-meta"><span>TEC-001</span><span>Tecnología</span></div><h3>Punto Deportivo Digital</h3><p class="editorial-note">Ficha en documentación</p></article><article class="project-card" id="TEC-002" data-category="Tecnología"><div class="project-meta"><span>TEC-002</span><span>Tecnología</span></div><h3>Costeo</h3><p class="editorial-note">Ficha en documentación</p></article><article class="project-card" id="DIS-001" data-category="Diseño"><div class="project-meta"><span>DIS-001</span><span>Diseño</span></div><h3>Productos personalizados</h3><p class="editorial-note">Ficha en documentación</p></article><article class="project-card" id="DIS-002" data-category="Diseño"><div class="project-meta"><span>DIS-002</span><span>Diseño</span></div><h3>Dioramas y prototipado</h3><p class="editorial-note">Ficha en documentación</p></article><!-- /content:list:featuredPortfolio --></div></div></section>
+<section id="flowzart" class="section studio" aria-labelledby="studio-title"><div class="shell studio-grid"><div><p class="eyebrow">05 / ESTUDIO + TALLER</p><h2 id="studio-title" data-bind="studio.name"><!-- content:bind:studio.name -->Flowzart Studio<!-- /content:bind:studio.name --></h2><p class="lead" data-bind="studio.description"><!-- content:bind:studio.description -->Espacio independiente de trabajo técnico y creativo de Pedro, desde donde desarrolla proyectos físicos y digitales.<!-- /content:bind:studio.description --></p><p data-bind="studio.presentation"><!-- content:bind:studio.presentation -->En Flowzart Studio conecto análisis, diseño y ejecución para desarrollar proyectos físicos y digitales.<!-- /content:bind:studio.presentation --></p><p class="studio-ai" data-bind="studio.aiPractice"><!-- content:bind:studio.aiPractice -->Estudio y experimento continuamente con tecnologías de inteligencia artificial, integrándolas en diferentes etapas de mis proyectos.<!-- /content:bind:studio.aiPractice --></p></div><div class="studio-panel"><span class="mono quiet">IDEAS / PRUEBAS / SOLUCIONES</span><ul data-list="studioActivities"><!-- content:list:studioActivities --><li>Ingeniería y análisis de factibilidad</li><li>Diseño técnico y creativo</li><li>Desarrollo de software y herramientas digitales</li><li>Fabricación de productos y prototipos</li><li>Investigación y aplicación práctica de inteligencia artificial</li><!-- /content:list:studioActivities --></ul><span class="studio-sign">Flowzart<span aria-hidden="true"> ↗</span></span></div></div></section>
+<span id="experiencia" aria-hidden="true"></span><section id="curriculum" class="section" aria-labelledby="trajectory-title"><div class="shell"><p class="eyebrow">06 / TRAYECTORIA Y FORMACIÓN</p><h2 id="trajectory-title">El recorrido detrás del trabajo.</h2><div class="background-grid"><div><h3>Trayectoria</h3><div data-list="trajectory"><!-- content:list:trajectory --><p class="quiet">Los antecedentes de trayectoria están pendientes de incorporar.</p><!-- /content:list:trajectory --></div></div><div><h3>Formación</h3><div data-list="education"><!-- content:list:education --><p class="quiet">La información de formación está pendiente de incorporar.</p><!-- /content:list:education --></div></div><div class="cv-panel"><span class="mono">DOCUMENTO / CV</span><h3>Una visión del recorrido.</h3><p data-bind="cv.summary"><!-- content:bind:cv.summary -->El CV definitivo está pendiente de incorporar.<!-- /content:bind:cv.summary --></p><a id="cv-download" class="button secondary" hidden download>Descargar CV en PDF ↓</a></div></div></div></section>
+<section id="contacto" class="section contact" aria-labelledby="contact-title"><div class="shell contact-grid"><div><p class="eyebrow">07 / CONTACTO</p><h2 id="contact-title">Toda solución empieza<br>con una conversación.</h2></div><div><p>Para empresas, instituciones, empleadores y clientes.</p><div data-list="contact"><!-- content:list:contact --><p class="quiet">Los canales de contacto están pendientes de incorporar.</p><!-- /content:list:contact --></div></div></div></section>
+</main><footer><div class="shell footer-wrap"><div><strong data-bind="identity.name"><!-- content:bind:identity.name -->Pedro Soto Almonacid<!-- /content:bind:identity.name --></strong><span data-bind="identity.concept"><!-- content:bind:identity.concept -->Del análisis a la solución.<!-- /content:bind:identity.concept --></span></div><span class="mono">ING / TEC / DIS</span><a href="#inicio">Volver arriba ↑</a></div></footer>
+<p id="content-status" class="load-status" role="status" hidden></p><noscript><p class="shell noscript">Puedes recorrer el sitio sin JavaScript. Los filtros requieren JavaScript; se muestran los seis proyectos.</p></noscript>
+</body></html>
