@@ -1,6 +1,6 @@
 # Sitio profesional Pedro Soto Almonacid — contenido v0.3 local
 
-**Del análisis a la solución.** Portafolio multidisciplinario de ingeniería, tecnología y diseño. El diseño v0.2 se conserva y se incorporan formación, trayectoria, contacto y contexto territorial en v0.3. Los datos aún desconocidos se mantienen pendientes. Cambios locales sin commit ni publicación.
+**Del análisis a la solución.** Portafolio multidisciplinario de ingeniería, tecnología y diseño. El diseño v0.2 se conserva y se incorporan formación, trayectoria, contacto y contexto territorial en v0.3. Los datos aún desconocidos se mantienen pendientes. Publicación inicial verificada: https://flowzart-studio.github.io/pedro-soto-almonacid/ Repositorio: https://github.com/flowzart-studio/pedro-soto-almonacid. Commit funcional desplegado: `ac071417331a6b4f62860e51f87bc6b7ce99de16`.
 
 ## Ejecutar en local
 
@@ -65,7 +65,7 @@ Los campos originales se archivaron en `archive/content/site-v0.2-ecaa00a.json` 
 
 Mantener rutas relativas a `dist/index.html`, sin `/` inicial, respetando mayúsculas/minúsculas. CSS resuelve sus recursos desde `dist/css/`. El sitio fue comprobado bajo la subruta `/dist/` y no requiere prefijo de repositorio ni `<base>`.
 
-`.openai/hosting.json` conserva la identidad de la publicación anterior en Sites, restringida al propietario. GitHub Pages está evaluado para publicar exclusivamente `dist/` mediante Actions, sin mover la carpeta local ni la documentación. El workflow `.github/workflows/pages.yml` está preparado con ejecución manual y controles previos, y v0.2 se consolida en un commit local autorizado. No se configuró remoto, no se activó Pages ni se hicieron push o despliegues. Pasos exactos y decisiones pendientes en `GITHUB_PAGES.md`; toda publicación requiere autorización expresa.
+`.openai/hosting.json` conserva la identidad del sitio anterior de Sites, que no se modificó. GitHub Pages publica exclusivamente dist mediante el workflow manual y verificado; origin apunta al repositorio público. El original conserva su ubicación e historial; la copia pública usa el historial limpio. Ver GITHUB_PAGES.md para próximas publicaciones manuales.
 
 ## Principios conservados
 
@@ -73,12 +73,10 @@ Contenido separado de presentación; una página narrativa; navegación por ancl
 
 Las capturas y páginas de `output/qa/` se conservan localmente, ignoradas por Git; únicamente su informe `VALIDACION.md` se versiona. Todo contenido bajo `dist/` será accesible si se publica. Se retiraron de esta carpeta el PDF provisional y los datos históricos del JSON, conservándolos fuera de dist; no alojar allí datos privados.
 
-## Informe previo a publicación
+## Respaldo y publicación segura
 
-Destino definido: `flowzart-studio/pedro-soto-almonacid`, todavía sin crear ni conectar. Revisar `INFORME_PUBLICACION.md`: dist excluye el PDF provisional, pero el historial completo y una copia versionada fuera de dist lo conservan. `.gitignore` no oculta archivos históricos; se requiere decisión de visibilidad antes del primer push. Nuevos archivos de preservación en archive/output/pdf y capturas QA permanecen locales e ignorados.
+El original y su respaldo completo están fuera de esta copia. En el historial público se excluyeron ambas rutas del PDF provisional, preservando el resto de archivos y metadatos. No hay PDFs en dist ni recuperables desde las referencias remotas verificadas. La interfaz conserva formación y trayectoria sin ofrecer un CV sustituto. Ver INFORME_PUBLICACION.md para comprobaciones y resultados.
 
-## Preparación inicial pública autorizada
+## Publicación inicial completada
 
-El historial público se preparó en una copia separada, tras respaldo completo verificado y recuperación de prueba del repositorio original. Se retiraron las dos rutas históricas del PDF provisional y todas sus copias del árbol de publicación. Los dos commits restantes conservan mensajes, autores y fechas, con hashes nuevos por el cambio de árboles. El repositorio original conserva su historial íntegro.
-
-Destino autorizado: https://github.com/flowzart-studio/pedro-soto-almonacid y Pages https://flowzart-studio.github.io/pedro-soto-almonacid/. Workflow manual; creación, push y primer despliegue autorizados tras comprobaciones. Estado previo a ejecución: todavía no publicado. No se ofrece CV descargable; trayectoria y formación permanecen.
+GitHub Pages está activo con workflow manual. El historial público excluye todos los PDFs provisionales; el repositorio original y su respaldo conservan el historial completo fuera de la copia pública. La documentación de cierre se registra después del despliegue; los archivos de dist permanecen iguales al commit funcional publicado. Ver STATUS.md y GITHUB_PAGES.md para estado y procedimiento vigentes.
