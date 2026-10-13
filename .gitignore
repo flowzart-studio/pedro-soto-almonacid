@@ -2,6 +2,11 @@
 /output/qa/*
 !/output/qa/VALIDACION.md
 
+# Archivos de preservación local: no añadir nuevas copias al remoto.
+# Los archivos ya versionados siguen en Git y deben revisarse por separado.
+/archive/
+/output/pdf/
+
 # Archivos temporales y cachés; no afectan fuentes ni documentación.
 *.log
 *.tmp

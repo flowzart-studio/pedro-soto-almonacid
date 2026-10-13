@@ -14,14 +14,14 @@ El sitio permanece en su carpeta local actual. La rama es `main`; el commit de c
 
 Referencia oficial: https://docs.github.com/en/pages/getting-started-with-github-pages/using-custom-workflows-with-github-pages
 
-## Datos y decisiones requeridos
+## Destino definido y decisiones requeridas
 
-1. Cuenta o institución propietaria en GitHub.
-2. Nombre y URL exacta del repositorio de destino.
-3. Visibilidad del repositorio y disponibilidad de Pages según el plan.
-4. Autorización para crear o usar el repositorio, vincular el remoto, hacer el primer push y activar/publicar Pages.
+- Propietario: `flowzart-studio`.
+- Repositorio propuesto: `pedro-soto-almonacid`.
+- Remoto previsto: `https://github.com/flowzart-studio/pedro-soto-almonacid.git`.
+- Pages esperado: `https://flowzart-studio.github.io/pedro-soto-almonacid/`.
 
-Nombre recomendado: **pedro-soto-almonacid**, permanente e independiente del número de versión. URL de proyecto prevista: `https://<usuario>.github.io/pedro-soto-almonacid/`. No se ha comprobado disponibilidad del nombre en una cuenta concreta. El repositorio especial `<usuario>.github.io` sería una alternativa para publicar en la raíz de esa cuenta; no es necesario para este proyecto.
+Falta confirmar existencia/disponibilidad, permisos, visibilidad y plan de Pages. No se creó ni vinculó el repositorio. El PDF provisional sigue en el historial y una copia está versionada fuera de dist: un repositorio público los expondrá. Resolver esta decisión antes de autorizar el primer push, según `INFORME_PUBLICACION.md`.
 
 ## Pasos posteriores a la autorización
 
@@ -30,7 +30,7 @@ Crear un repositorio vacío o confirmar uno existente. Para un repositorio nuevo
 Desde la carpeta local y sustituyendo los marcadores:
 
 ```powershell
-git remote add origin https://github.com/<usuario>/pedro-soto-almonacid.git
+git remote add origin https://github.com/flowzart-studio/pedro-soto-almonacid.git
 git remote -v
 git push -u origin main
 ```
@@ -45,11 +45,19 @@ El workflow todavía no se ha ejecutado en GitHub; su configuración fue revisad
 
 ## Control editorial antes de publicar
 
-- Completar participación, herramientas, estado y evidencias de los seis proyectos; formación, trayectoria, retrato, CV y contacto siguen pendientes.
+- Formación, trayectoria y contacto incorporados en v0.3 local; siguen pendientes retrato, CV definitivo, datos laborales faltantes y detalles/evidencias de proyectos. Aprobar estos cambios antes de un commit posterior.
 - No incorporar archivos privados a `dist/` ni información sensible al JSON: todo el directorio se publica, incluso archivos sin enlaces visibles.
 - `publicationApproved` controla el renderizado; no restringe el acceso al archivo o al JSON servido.
-- El PDF placeholder se conserva por decisión de preservación y sigue accesible por ruta directa si se publica `dist/`, aunque no aparece como descarga de CV definitivo.
+- El PDF placeholder se trasladó fuera de `dist/` a `output/pdf/` y no será parte del artefacto publicado. El enlace de CV sigue oculto hasta disponer del definitivo.
 - `output/qa/` contiene capturas y páginas generadas locales ignoradas; se versiona únicamente `VALIDACION.md`.
-- Se conservaron los datos v0.1 por compatibilidad; el JSON completo será accesible públicamente. Actualmente son datos provisionales, sin documentos privados de clientes.
+- El JSON anterior está preservado en `archive/content/site-v0.2-ecaa00a.json` fuera de dist. El JSON activo completo será accesible públicamente; incluye únicamente el contenido profesional preparado y sus campos pendientes.
 
 Después de editar contenido: `node scripts/sync-content.cjs`, revisar diferencias, ejecutar `node --test tests/content.test.cjs` y `node scripts/sync-content.cjs --check`. Registrar los cambios y subirlos solo con autorización; la publicación continuará siendo manual.
+
+No presentar Flowzart Studio como marca registrada. Trámite INAPI pendiente; no modifica la identidad pública del estudio.
+
+## Preparación inicial pública autorizada
+
+El historial público se preparó en una copia separada, tras respaldo completo verificado y recuperación de prueba del repositorio original. Se retiraron las dos rutas históricas del PDF provisional y todas sus copias del árbol de publicación. Los dos commits restantes conservan mensajes, autores y fechas, con hashes nuevos por el cambio de árboles. El repositorio original conserva su historial íntegro.
+
+Destino autorizado: https://github.com/flowzart-studio/pedro-soto-almonacid y Pages https://flowzart-studio.github.io/pedro-soto-almonacid/. Workflow manual; creación, push y primer despliegue autorizados tras comprobaciones. Estado previo a ejecución: todavía no publicado. No se ofrece CV descargable; trayectoria y formación permanecen.

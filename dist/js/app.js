@@ -33,20 +33,29 @@
     const images = records(p.images).filter(i=>safeUrl(i.src,"asset") && text(i.alt) && approved(i.evidenceId));
     const links = records(p.links).filter(l=>text(l.label) && safeUrl(l.url));
     const tools = strings(p.tools);
-    return `<article class="project-card" id="${escapeHtml(p.id)}" data-category="${escapeHtml(p.category)}"><div class="project-meta"><span>${escapeHtml(p.id)}</span><span>${escapeHtml(p.category)}</span></div><h3>${escapeHtml(p.title)}</h3>${text(p.location)?`<p class="project-location">${escapeHtml(p.location)}</p>`:""}${field("Tipo de trabajo",p.workType)}${field("Problema / contexto",p.context)}${field("Intervención / solución",p.solution)}${field("Mi participación",p.participation)}${tools.length?field("Herramientas",tools.join(" · ")):""}${results.length?`<div class="project-detail"><h4>Resultados verificables</h4><ul>${results.map(r=>`<li>${escapeHtml(r.description)}</li>`).join("")}</ul></div>`:""}${images.length?`<div class="project-images">${images.map(i=>`<figure><img src="${escapeHtml(safeUrl(i.src,"asset"))}" alt="${escapeHtml(i.alt)}" loading="lazy" decoding="async">${text(i.caption)?`<figcaption>${escapeHtml(i.caption)}</figcaption>`:""}</figure>`).join("")}</div>`:""}${links.length?`<div class="project-links">${links.map(l=>`<a href="${escapeHtml(safeUrl(l.url))}" target="_blank" rel="noopener noreferrer">${escapeHtml(l.label)} ↗<span class="sr-only"> (abre una nueva pestaña)</span></a>`).join("")}</div>`:""}${text(p.status)?`<p class="project-status">Estado del proyecto: ${escapeHtml(p.status)}</p>`:""}${text(p.editorialStatus)?`<p class="editorial-note">${p.editorialStatus==="Pendiente de documentar"?"Ficha en documentación":`Documentación: ${escapeHtml(p.editorialStatus)}`}</p>`:""}</article>`;
+    return `<article class="project-card" id="${escapeHtml(p.id)}" data-category="${escapeHtml(p.category)}"><div class="project-meta"><span>${escapeHtml(p.id)}</span><span>${escapeHtml(p.category)}</span></div><h3>${escapeHtml(p.title)}</h3>${text(p.location)?`<p class="project-location">${escapeHtml(p.location)}</p>`:""}${field("Tipo de trabajo",p.workType)}${field("Problema / contexto",p.context)}${field("Intervención / solución",p.solution)}${field("Herramienta propia de apoyo al servicio",p.supportingTool)}${field("Mi participación",p.participation)}${tools.length?field("Herramientas",tools.join(" · ")):""}${results.length?`<div class="project-detail"><h4>Resultados verificables</h4><ul>${results.map(r=>`<li>${escapeHtml(r.description)}</li>`).join("")}</ul></div>`:""}${images.length?`<div class="project-images">${images.map(i=>`<figure><img src="${escapeHtml(safeUrl(i.src,"asset"))}" alt="${escapeHtml(i.alt)}" loading="lazy" decoding="async">${text(i.caption)?`<figcaption>${escapeHtml(i.caption)}</figcaption>`:""}</figure>`).join("")}</div>`:""}${links.length?`<div class="project-links">${links.map(l=>`<a href="${escapeHtml(safeUrl(l.url))}" target="_blank" rel="noopener noreferrer">${escapeHtml(l.label)} ↗<span class="sr-only"> (abre una nueva pestaña)</span></a>`).join("")}</div>`:""}${text(p.status)?`<p class="project-status">Estado del proyecto: ${escapeHtml(p.status)}</p>`:""}${text(p.editorialStatus)?`<p class="editorial-note">${p.editorialStatus==="Pendiente de documentar"?"Ficha en documentación":`Documentación: ${escapeHtml(p.editorialStatus)}`}</p>`:""}</article>`;
   }).join("");
   const renderBackground = (value,type) => records(value).filter(x=>text(x[type==="education"?"title":"role"])).map(x=>`<article class="timeline-item"><h4>${escapeHtml(x[type==="education"?"title":"role"])}</h4>${text(x.institution||x.organization)?`<p>${escapeHtml(x.institution||x.organization)}</p>`:""}${text(x.period)?`<span>${escapeHtml(x.period)}</span>`:""}${text(x.type)?`<p>${escapeHtml(x.type)}</p>`:""}${text(x.description)?`<p>${escapeHtml(x.description)}</p>`:""}</article>`).join("") || `<p class="quiet">${type==="education"?"La información de formación está pendiente de incorporar.":"Los antecedentes de trayectoria están pendientes de incorporar."}</p>`;
+  const whatsappHref = contact => {
+    const base = safeUrl(contact?.whatsappUrl);
+    if (!base) return "";
+    const url = new URL(base);
+    if (url.hostname !== "wa.me" || !/^\/\d+$/.test(url.pathname)) return "";
+    const message = text(contact.whatsappMessage);
+    if (message) url.searchParams.set("text", message);
+    return url.href;
+  };
   const renderContact = contact => {
     const c = contact && typeof contact === "object" ? contact : {};
     const email = text(c.email);
     const entries = [];
     if (/^[^\s@<>]+@[^\s@<>]+\.[^\s@<>]+$/.test(email) && !/[?&#%]/.test(email)) entries.push(`<a class="contact-link" href="mailto:${escapeHtml(email)}"><span>Correo</span><span>${escapeHtml(email)}</span></a>`);
-    [["WhatsApp",c.whatsapp,c.whatsappUrl],["LinkedIn",c.linkedinLabel,c.linkedinUrl]].forEach(([label,value,url])=>{if(text(value)&&safeUrl(url)) entries.push(`<a class="contact-link" href="${escapeHtml(safeUrl(url))}" target="_blank" rel="noopener noreferrer"><span>${label}</span><span>${escapeHtml(value)} ↗<span class="sr-only"> (abre una nueva pestaña)</span></span></a>`);});
+    [["WhatsApp",c.whatsapp,whatsappHref(c)],["LinkedIn",c.linkedinLabel,c.linkedinUrl]].forEach(([label,value,url])=>{if(text(value)&&safeUrl(url)) entries.push(`<a class="contact-link" href="${escapeHtml(safeUrl(url))}" target="_blank" rel="noopener noreferrer"><span>${label}</span><span>${escapeHtml(value)} ↗<span class="sr-only"> (abre una nueva pestaña)</span></span></a>`);});
     if(text(c.location)) entries.push(`<p>${escapeHtml(c.location)}</p>`);
     return entries.join("") || '<p class="quiet">Los canales de contacto están pendientes de incorporar.</p>';
   };
   // Permite comprobar los renderizadores con Node, sin dependencias ni navegador.
-  if (typeof module !== "undefined" && module.exports) { module.exports={safeUrl,validModel,renderPortfolio,renderBackground,renderProcess,renderContact,renderAreas,escapeHtml,strings}; return; }
+  if (typeof module !== "undefined" && module.exports) { module.exports={safeUrl,validModel,renderPortfolio,renderBackground,renderProcess,renderContact,renderAreas,escapeHtml,strings,whatsappHref}; return; }
   const getValue = (data,path) => path.split(".").reduce((value,key)=>value?.[key],data);
   const setList = (name,html) => { const el=document.querySelector(`[data-list="${name}"]`); if(el) el.innerHTML=html; };
   const setupNavigation = () => {
@@ -83,9 +92,9 @@
     Object.entries(v.theme?.palette||{}).forEach(([key,value])=>{if(["background","surface","accent","text","textSecondary"].includes(key)&&/^#[0-9a-f]{6}$/i.test(text(value)))document.documentElement.style.setProperty(`--${key}`,value);});
     const theme=text(v.theme?.palette?.background);if(/^#[0-9a-f]{6}$/i.test(theme))document.querySelector('meta[name="theme-color"]').content=theme;
     const portrait=v.portrait;if(safeUrl(portrait?.src,"asset")&&text(portrait?.alt))document.querySelector("#portrait").innerHTML=`<img class="portrait" src="${escapeHtml(safeUrl(portrait.src,"asset"))}" alt="${escapeHtml(portrait.alt)}" loading="lazy" decoding="async">`;
-    const cv=document.querySelector("#cv-download");if(v.cv?.available===true&&safeUrl(v.cv.file,"asset")){cv.href=safeUrl(v.cv.file,"asset");cv.hidden=false;}
+    const cv=document.querySelector("#cv-download");if(cv&&v.cv?.available===true&&safeUrl(v.cv.file,"asset")){cv.href=safeUrl(v.cv.file,"asset");cv.hidden=false;}
     setupFilters();
   };
   setupNavigation();
-  fetch("content/site.json?v=0.2.0",{cache:"no-store"}).then(r=>{if(!r.ok)throw new Error(`HTTP ${r.status}`);return r.json();}).then(render).catch(error=>{console.error("No se pudo actualizar el contenido:",error);const status=document.querySelector("#content-status");status.textContent="No se pudo actualizar el contenido. Se muestra la versión incluida en la página. Comprueba el archivo de contenido y la conexión; para abrir el proyecto local utiliza un servidor HTTP.";status.hidden=false;});
+  fetch("content/site.json?v=0.3.0",{cache:"no-store"}).then(r=>{if(!r.ok)throw new Error(`HTTP ${r.status}`);return r.json();}).then(render).catch(error=>{console.error("No se pudo actualizar el contenido:",error);const status=document.querySelector("#content-status");status.textContent="No se pudo actualizar el contenido. Se muestra la versión incluida en la página. Comprueba el archivo de contenido y la conexión; para abrir el proyecto local utiliza un servidor HTTP.";status.hidden=false;});
 })();

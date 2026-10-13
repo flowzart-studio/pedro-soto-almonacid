@@ -35,3 +35,17 @@ Revisión básica con navegador y dimensiones simuladas; no es certificación de
 - `.gitignore` conserva capturas/páginas QA localmente y excluye su incorporación; este informe se versiona.
 - Workflow revisado estáticamente: `workflow_dispatch`, rama main, controles de contenido y artefacto dist. No ejecutado en GitHub.
 - Ningún cambio de identidad o rediseño en esta consolidación. Commit local autorizado; sin push ni despliegue.
+
+## Contenido v0.3 — base ecaa00a, cambios sin commit
+
+- Formación formal (4) y trayectoria (4) incorporadas; fechas no aportadas vacías y pendientes visibles.
+- Contactos públicos confirmados, 2 CTA y borrador WhatsApp codificado; no se envió ningún mensaje.
+- Ingeniería territorial agregada separada de resultados por caso; herramienta SAG descrita como apoyo general al servicio.
+- Nueve pruebas Node exitosas; sincronizador --check y sintaxis JS correctos.
+- Revisión escritorio 1440 y móvil 390/320, sin desbordamiento; menú y navegación correctos; consola normal sin errores.
+- Capturas: v03-trayectoria-escritorio.jpg y v03-contacto-movil.jpg.
+- CV placeholder preservado fuera de dist; JSON histórico archivado fuera del artefacto público. CSS sin cambios de contenido.
+- LinkedIn no pudo leerse independientemente; se incorporaron los antecedentes aportados por Pedro según ese perfil.
+- Sin commit, push ni publicación de v0.3; workflow de Pages sigue manual, sin ejecución.
+
+Respaldo HTML sin app.js v0.3: cuatro formaciones y cuatro entradas de trayectoria, tres contactos, CV oculto y contenido legible.

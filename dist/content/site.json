@@ -1,176 +1,12 @@
 {
-  "version": "0.1.0",
-  "identity": {
-    "name": "Pedro Soto",
-    "professionalTitle": "Título profesional por definir"
-  },
-  "hero": {
-    "eyebrow": "PERFIL PROFESIONAL · SITIO 001",
-    "disciplines": "Ingeniería · Proyectos · Soluciones",
-    "valueProposition": "Propuesta profesional provisional: diagnóstico, diseño e implementación de soluciones técnicas y digitales.",
-    "photoLabel": "Fotografía profesional pendiente"
-  },
-  "about": {
-    "summary": "Pedro aborda problemas técnicos y operativos con una mirada práctica, conectando análisis, diseño y ejecución.",
-    "detail": "Presentación profesional pendiente de completar con antecedentes verificados y una descripción precisa de su experiencia."
-  },
-  "capabilitiesIntro": "El contenido específico de cada área se incorporará cuando esté validado.",
-  "capabilityWorlds": [
-    {
-      "code": "ING / TÉCNICA",
-      "title": "Ingeniería y soluciones técnicas",
-      "description": "Espacio preparado para describir problemas de ingeniería, diagnóstico y soluciones técnicas con información real.",
-      "status": "Capacidades específicas por documentar"
-    },
-    {
-      "code": "SYS / DIGITAL",
-      "title": "Sistemas y productos digitales",
-      "description": "Espacio preparado para presentar herramientas, aplicaciones y procesos digitales a partir de necesidades concretas.",
-      "status": "Productos y alcance por documentar"
-    },
-    {
-      "code": "FAB / PROTOTIPO",
-      "title": "Diseño, fabricación y prototipado",
-      "description": "Espacio preparado para mostrar piezas, pruebas, fabricación y aprendizaje mediante prototipos.",
-      "status": "Trabajos y materiales por documentar"
-    }
-  ],
-  "process": [
-    {
-      "title": "Entender",
-      "description": "Comprender el problema, su contexto y a quién afecta antes de proponer una respuesta."
-    },
-    {
-      "title": "Diagnosticar",
-      "description": "Identificar causas, restricciones, recursos disponibles y oportunidades reales de mejora."
-    },
-    {
-      "title": "Diseñar",
-      "description": "Definir una solución clara y proporcional al problema, sin complejidad innecesaria."
-    },
-    {
-      "title": "Implementar",
-      "description": "Construir, ejecutar, probar o poner en funcionamiento la solución diseñada."
-    },
-    {
-      "title": "Mejorar",
-      "description": "Observar el resultado en uso y ajustar lo necesario a partir de evidencia."
-    }
-  ],
-  "experience": [
-    {
-      "period": "Fechas por confirmar",
-      "organization": "Organización por confirmar",
-      "role": "Cargo o función por confirmar",
-      "description": "Responsabilidades, alcance y aprendizajes pendientes de documentar."
-    },
-    {
-      "period": "Fechas por confirmar",
-      "organization": "Organización por confirmar",
-      "role": "Experiencia profesional por incorporar",
-      "description": "Esta cronología admite nuevas experiencias sin modificar la estructura visual."
-    }
-  ],
-  "portfolio": [
-    {
-      "reference": "FICHA / CASO PENDIENTE 01",
-      "state": "CONTENIDO PROVISIONAL",
-      "title": "Trabajo profesional por documentar",
-      "category": "Área por confirmar",
-      "workType": "Tipo de intervención por confirmar",
-      "clientOrSector": "Cliente o sector opcional",
-      "year": "",
-      "location": "",
-      "problem": "Problema o necesidad real pendiente de describir.",
-      "intervention": "Acciones, decisiones y alcance pendientes de describir.",
-      "result": "Resultado verificable pendiente de incorporar.",
-      "images": [
-        {
-          "src": "",
-          "alt": "",
-          "label": "Fotografía general del trabajo"
-        },
-        {
-          "src": "",
-          "alt": "",
-          "label": "Detalle técnico o proceso"
-        }
-      ],
-      "tools": []
-    },
-    {
-      "reference": "FICHA / CASO PENDIENTE 02",
-      "state": "CONTENIDO PROVISIONAL",
-      "title": "Segundo trabajo por documentar",
-      "category": "Área por confirmar",
-      "workType": "Tipo de intervención por confirmar",
-      "clientOrSector": "Cliente o sector opcional",
-      "year": "",
-      "location": "",
-      "problem": "Contexto y necesidad pendientes de validación.",
-      "intervention": "Trabajo realizado pendiente de validación.",
-      "result": "Impacto, mejora o entregable pendiente de validación.",
-      "images": [
-        {
-          "src": "",
-          "alt": "",
-          "label": "Imagen antes, durante o después"
-        }
-      ],
-      "tools": []
-    }
-  ],
-  "projects": [
-    {
-      "name": "Punto Digital",
-      "status": "Estado por confirmar",
-      "observedProblem": "Problema observado pendiente de documentar.",
-      "solution": "Herramienta creada, alcance y uso pendientes de documentar.",
-      "technologies": []
-    },
-    {
-      "name": "Goals",
-      "status": "Estado por confirmar",
-      "observedProblem": "Problema observado pendiente de documentar.",
-      "solution": "Herramienta creada, alcance y uso pendientes de documentar.",
-      "technologies": []
-    },
-    {
-      "name": "Expedientes SAG",
-      "status": "Estado por confirmar",
-      "observedProblem": "Problema observado pendiente de documentar.",
-      "solution": "Herramienta creada, alcance y uso pendientes de documentar.",
-      "technologies": []
-    },
-    {
-      "name": "Bingo",
-      "status": "Estado por confirmar",
-      "observedProblem": "Problema observado pendiente de documentar.",
-      "solution": "Herramienta creada, alcance y uso pendientes de documentar.",
-      "technologies": []
-    }
-  ],
-  "cv": {
-    "summary": "El CV definitivo aún no está disponible. El archivo actual permite validar el flujo de descarga.",
-    "file": "assets/cv/pedro-soto-cv-placeholder.pdf"
-  },
-  "contact": {
-    "note": "Los datos de contacto están pendientes de incorporar.",
-    "email": "",
-    "whatsapp": "",
-    "whatsappUrl": "",
-    "linkedinLabel": "",
-    "linkedinUrl": "",
-    "location": ""
-  },
-  "social": [],
+  "version": "0.3.0",
   "v02": {
-    "version": "0.2.0",
-    "stage": "Integración visual local; contenido de proyectos pendiente de documentar",
+    "version": "0.3.0",
+    "stage": "Contenido profesional incorporado en local; aprobación y publicación pendientes",
     "identity": {
       "name": "Pedro Soto Almonacid",
       "concept": "Del análisis a la solución.",
-      "professionalTitle": "",
+      "professionalTitle": "Ingeniero Civil Industrial",
       "audiences": [
         "Empresas",
         "Instituciones",
@@ -214,16 +50,76 @@
       ],
       "aiPractice": "Estudio y experimento continuamente con tecnologías de inteligencia artificial, integrándolas en diferentes etapas de mis proyectos."
     },
-    "education": [],
-    "trajectory": [],
+    "education": [
+      {
+        "title": "Ingeniero Civil Industrial",
+        "institution": "Universidad San Sebastián",
+        "type": "Título profesional",
+        "period": "Titulado en 2016",
+        "description": "",
+        "evidenceIds": []
+      },
+      {
+        "title": "Licenciado en Ciencias de la Ingeniería y Tecnología",
+        "institution": "Universidad San Sebastián",
+        "type": "Grado académico",
+        "period": "",
+        "description": "",
+        "evidenceIds": []
+      },
+      {
+        "title": "Magíster en Derecho de la Empresa",
+        "institution": "Universidad San Sebastián, Sede de la Patagonia",
+        "type": "Magíster",
+        "period": "2021",
+        "description": "",
+        "evidenceIds": []
+      },
+      {
+        "title": "Diplomado en Responsabilidad Civil de Empresas",
+        "institution": "Universidad San Sebastián",
+        "type": "Diplomado",
+        "period": "2021",
+        "description": "",
+        "evidenceIds": []
+      }
+    ],
+    "trajectory": [
+      {
+        "role": "Coordinador de proyectos de pesca artesanal",
+        "organization": "Subsecretaría de Pesca y Acuicultura",
+        "period": "Mayo – diciembre de 2019",
+        "description": "",
+        "evidenceIds": [],
+        "sourceUrl": "https://www.linkedin.com/in/pedro-soto-almonacid-38558aa4/",
+        "sourceNote": "Según LinkedIn; antecedente aportado por Pedro."
+      },
+      {
+        "role": "Ventas técnicas de hidráulica y suministros navales",
+        "organization": "Importadora y Comercializadora Talcahuano Ltda.",
+        "period": "Octubre de 2021 – abril de 2024",
+        "description": "",
+        "evidenceIds": [],
+        "sourceUrl": "https://www.linkedin.com/in/pedro-soto-almonacid-38558aa4/",
+        "sourceNote": "Según LinkedIn; antecedente aportado por Pedro."
+      },
+      {
+        "role": "Encargado de proyectos",
+        "organization": "Constructora Antibes",
+        "period": "",
+        "description": "Fechas y responsabilidades detalladas pendientes de confirmación.",
+        "evidenceIds": [],
+        "sourceNote": "Antecedente confirmado por Pedro; período pendiente."
+      }
+    ],
     "featuredPortfolio": [
       {
         "id": "ING-001",
         "title": "Levantamiento topográfico de terreno urbano, Puerto Varas",
         "category": "Ingeniería",
-        "workType": "",
+        "workType": "Levantamiento topográfico",
         "location": "Puerto Varas",
-        "context": "",
+        "context": "Levantamiento topográfico y subdivisión predial son servicios complementarios y pueden formar parte de un mismo encargo.",
         "solution": "",
         "participation": "",
         "tools": [],
@@ -232,16 +128,15 @@
         "images": [],
         "links": [],
         "evidence": [],
-        "editorialStatus": "Pendiente de documentar"
+        "editorialStatus": "Alcance particular y evidencias por documentar"
       },
       {
         "id": "ING-002",
         "title": "Proyecto de subdivisión predial rural",
         "category": "Ingeniería",
-        "workType": "",
+        "workType": "Subdivisión predial rural",
         "location": "",
-        "context": "",
-        "solution": "",
+        "context": "Levantamiento topográfico y subdivisión predial son servicios complementarios y pueden formar parte de un mismo encargo.",
         "participation": "",
         "tools": [],
         "results": [],
@@ -249,7 +144,9 @@
         "images": [],
         "links": [],
         "evidence": [],
-        "editorialStatus": "Pendiente de documentar"
+        "editorialStatus": "Alcance particular y evidencias por documentar",
+        "supportingTool": "Desarrollo de una herramienta digital propia para la gestión y el seguimiento de expedientes relacionados con el SAG.",
+        "solution": ""
       },
       {
         "id": "TEC-001",
@@ -353,16 +250,23 @@
     "cv": {
       "available": false,
       "file": "",
-      "summary": "El CV definitivo está pendiente de incorporar."
+      "summary": "La formación y trayectoria confirmadas se pueden consultar en esta sección. No se ofrece actualmente un CV descargable."
     },
     "contact": {
-      "email": "",
-      "whatsapp": "",
-      "whatsappUrl": "",
-      "linkedinLabel": "",
-      "linkedinUrl": "",
+      "email": "sotopedroid@gmail.com",
+      "whatsapp": "+56998557968",
+      "whatsappUrl": "https://wa.me/56998557968",
+      "whatsappMessage": "Hola Pedro, me gustaría conversar sobre mi proyecto.",
+      "linkedinLabel": "Pedro Soto Almonacid",
+      "linkedinUrl": "https://www.linkedin.com/in/pedro-soto-almonacid-38558aa4/",
       "location": ""
     },
-    "metadata": {}
+    "metadata": {},
+    "territorialExperience": {
+      "summary": "Una trayectoria de más de veinte trabajos de ingeniería territorial, desde predios de aproximadamente una hectárea hasta proyectos con más de diez propietarios y setenta lotes.",
+      "complementarity": "Levantamiento topográfico y subdivisión predial son servicios complementarios y pueden formar parte de un mismo encargo.",
+      "digitalTool": "Desarrollo de una herramienta digital propia para la gestión y el seguimiento de expedientes relacionados con el SAG.",
+      "scopeNote": "Estas cifras describen el conjunto de trabajos, no los resultados de cada ficha. No se afirman aprobaciones ni resoluciones administrativas."
+    }
   }
 }

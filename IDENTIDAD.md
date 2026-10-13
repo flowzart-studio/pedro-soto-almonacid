@@ -57,3 +57,9 @@ Presentar impacto y aprobar integración visual: nombre y narrativa en hero, sec
 ## Metodología integrada
 
 La instrucción visual más reciente prioriza exploración, factibilidad, prototipado, validación e implementación. Por ello, `v02.methodology` adopta Explorar → Evaluar → Prototipar → Validar → Implementar. La mejora continua forma parte de la última etapa. El proceso original de v0.1 se conserva en el JSON para compatibilidad.
+
+## Decisiones definitivas para publicación
+
+Flowzart Studio se mantiene como nombre del estudio técnico y creativo de Pedro Soto Almonacid. la actividad independiente descartada queda excluido del sitio, de la cronología y de las fichas profesionales. No se presenta Flowzart Studio como marca registrada: el trámite ante INAPI está pendiente. Esta última información se registra como decisión editorial, sin introducir afirmaciones de registro en la web.
+
+Destino GitHub previsto: propietario `flowzart-studio`, repositorio `pedro-soto-almonacid`. No se ha creado ni conectado. Se conserva la ubicación local y todo el historial; push y despliegue requieren autorización posterior.
