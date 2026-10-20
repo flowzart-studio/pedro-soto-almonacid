@@ -92,7 +92,7 @@
     const concept=text(v.identity.concept), parts=concept.split(" "), last=parts.pop();if (!document.querySelector("#hero-title").hasAttribute("data-cinematic-title")) document.querySelector("#hero-title").innerHTML=`${escapeHtml(parts.join(" "))} <span>${escapeHtml(last)}</span>`;
     document.querySelector(".brand").setAttribute("aria-label",`${v.identity.name}, inicio`);
     document.title = document.querySelector("[data-cinematic-title]") ? "Flowzart Studio | De tu idea a la implementación" : text(v.metadata?.title)||`${v.identity.name} | ${v.identity.concept}`;
-    document.querySelector('meta[name="description"]').content=text(v.metadata?.description)||v.presentation.summary;
+    if(!document.querySelector("[data-cinematic-title]")) document.querySelector('meta[name="description"]').content=text(v.metadata?.description)||v.presentation.summary;
     Object.entries(blocks).forEach(([name,html])=>setList(name,html));
     appearance.apply(v.theme);
     const theme=text(v.theme?.palette?.background);if(/^#[0-9a-f]{6}$/i.test(theme))document.querySelector('meta[name="theme-color"]').content=theme;

@@ -9,11 +9,14 @@
   const pauseButton = hero.querySelector('.cinema-pause');
   const scenes = buttons.map(button=>({...button.dataset}));
   const reduced = matchMedia('(prefers-reduced-motion: reduce)');
+  const connection = navigator.connection;
+  let consent = false, saveData = !!connection?.saveData;
   let active = -1, index = 0, busy = false, queued = null, revision = 0;
   let userPaused = false, blocked = false, inView = true;
   let fadeTimer = 0, finishFade = null, prepared = -1;
   const failed = new Set();
-  const canRun = () => !userPaused && !reduced.matches && inView && !document.hidden;
+  const permitted = () => consent || (!reduced.matches && !saveData);
+  const canRun = () => !userPaused && permitted() && inView && !document.hidden;
   const setState = state => {hero.dataset.playerState=state;};
   function label(sceneIndex) {
     index = sceneIndex; hero.dataset.currentScene = String(index);
@@ -21,10 +24,16 @@
     buttons.forEach((button,i)=>button.setAttribute('aria-pressed',String(i===index)));
   }
   function controls() {
-    pauseButton.hidden=reduced.matches;
+    pauseButton.hidden=false;
+    hero.dataset.motionConsent=String(consent);
+    hero.dataset.reducedMotion=String(reduced.matches);
+    hero.dataset.saveData=String(saveData);
+    hero.dataset.playerReason=blocked?'autoplay-blocked':userPaused?'user-paused':!permitted()?(reduced.matches?'reduced-motion':'save-data'):!inView?'offscreen':document.hidden?'hidden':'permitted';
     const playing = canRun() && !blocked && active>=0 && !videos[active].paused;
-    pauseButton.setAttribute('aria-label',playing ? 'Pausar movimiento' : 'Reproducir movimiento');
-    pauseButton.innerHTML=playing ? 'Pausar movimiento <span aria-hidden="true">Ⅱ</span>' : 'Reproducir movimiento <span aria-hidden="true">▶</span>';
+    const action=playing?'Pausar videos':saveData?'Reproducir videos (usa datos)':'Reproducir videos';
+    pauseButton.setAttribute('aria-label',action);
+    pauseButton.setAttribute('aria-pressed',String(playing));
+    pauseButton.innerHTML=action+` <span aria-hidden="true">${playing?'Ⅱ':'▶'}</span>`;
     hero.classList.toggle('is-paused',!playing);
   }
   function release(slot) {
@@ -66,7 +75,7 @@
     return index;
   }
   function prepareNext() {
-    if(!canRun()||busy||active<0)return;
+    if(!canRun()||busy||active<0||saveData)return;
     const next=nextIndex();
     if(next===index||prepared===next)return;
     prepared=next;
@@ -74,7 +83,7 @@
   }
   async function show(sceneIndex) {
     if(busy){queued=sceneIndex;return;}
-    if(reduced.matches){label(sceneIndex);setState('poster');return;}
+    if(!permitted()){label(sceneIndex);setState('poster');return;}
     busy=true;blocked=false;controls();
     const token=++revision;
     const slot=active<0?0:1-active;
@@ -120,6 +129,7 @@
   function suspend() {
     videos.forEach(video=>video.pause());
     if(active>=0)setState('paused');
+    controls();
   }
   videos.forEach((video,slot)=>{
     video.addEventListener('playing',()=>{video.dataset.playing='true';});
@@ -140,17 +150,13 @@
     });
     video.addEventListener('ended',()=>{if(slot===active&&canRun()&&!busy){const next=nextIndex();if(next!==index)void show(next);else{userPaused=true;controls();}}});
   });
-  buttons.forEach((button,i)=>button.addEventListener('click',()=>{
-    failed.delete(i);
-    if(reduced.matches||userPaused){++revision;busy=false;queued=null;cleanup();videos.forEach((_,slot)=>release(slot));active=-1;label(i);setState('poster');return;}
-    if(i!==index)void show(i);
-  }));
   pauseButton.addEventListener('click',()=>{
     if(canRun()&&!blocked&&active>=0&&!videos[active].paused){userPaused=true;++revision;busy=false;queued=null;cleanup();suspend();}
-    else{userPaused=false;blocked=false;failed.clear();void resume();}
+    else{consent=true;userPaused=false;blocked=false;failed.clear();void resume();}
     controls();
   });
   function preferenceChanged() {
+    consent=false;
     ++revision;busy=false;queued=null;cleanup();
     videos.forEach((_,i)=>release(i));active=-1;
     hero.classList.remove('cinema-intro');
@@ -158,6 +164,7 @@
     if(canRun())void show(index);
   }
   reduced.addEventListener('change',preferenceChanged);
+  connection?.addEventListener('change',()=>{saveData=!!connection.saveData;preferenceChanged();});
   document.addEventListener('visibilitychange',()=>{if(document.hidden)suspend();else void resume();});
   if('IntersectionObserver' in window)new IntersectionObserver(entries=>{
     inView=entries[0].isIntersecting;
