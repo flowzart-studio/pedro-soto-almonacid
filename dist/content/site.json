@@ -364,6 +364,69 @@
       "linkedinUrl": "https://www.linkedin.com/in/pedro-soto-almonacid-38558aa4/",
       "location": ""
     },
+    "editorialFinal": {
+      "studio": {
+        "title": "Un espacio para imaginar, experimentar y construir.",
+        "description": "Flowzart Studio es mi espacio de desarrollo técnico y creativo, donde las ideas se transforman en proyectos físicos y digitales.",
+        "exploration": "Aquí exploro herramientas, tecnologías y procesos que permiten abordar nuevas necesidades, desarrollar soluciones propias y experimentar con diferentes formas de crear.",
+        "learning": "La investigación, el aprendizaje continuo y la aplicación de nuevas tecnologías, incluida la inteligencia artificial, forman parte de esta manera de trabajar."
+      },
+      "career": {
+        "title": "Experiencia que conecta distintos mundos.",
+        "description": "Una trayectoria construida entre ingeniería, gestión de proyectos, soluciones técnicas y desarrollo tecnológico.",
+        "experience": [
+          {
+            "title": "Gestión y coordinación de proyectos",
+            "description": "Experiencia en planificación, coordinación y desarrollo de iniciativas."
+          },
+          {
+            "title": "Ingeniería y soluciones técnicas",
+            "description": "Trabajos relacionados con proyectos territoriales, hidráulica, suministros y gestión técnica."
+          },
+          {
+            "title": "Tecnología y desarrollo digital",
+            "description": "Creación de aplicaciones y herramientas propias para responder a necesidades concretas."
+          }
+        ],
+        "education": [
+          {
+            "sourceTitle": "Ingeniero Civil Industrial",
+            "displayTitle": "Ingeniería Civil Industrial",
+            "associatedSourceTitle": "Licenciado en Ciencias de la Ingeniería y Tecnología"
+          },
+          {
+            "sourceTitle": "Magíster en Derecho de la Empresa"
+          },
+          {
+            "sourceTitle": "Diplomado en Responsabilidad Civil de Empresas"
+          }
+        ]
+      },
+      "contact": {
+        "description": "¿Tienes una idea, un proyecto o una necesidad que resolver? Cuéntame qué tienes en mente y evaluemos cómo llevarlo a la práctica.",
+        "whatsappMessage": "Hola, encontré Flowzart Studio y me gustaría conversar sobre un proyecto."
+      },
+      "images": {
+        "areas": {
+          "src": "assets/images/areas/areas-trabajo-banner.webp",
+          "mobileSrc": "assets/images/areas/areas-trabajo-banner-mobile.webp",
+          "approved": true,
+          "width": 1916,
+          "height": 821
+        },
+        "studio": {
+          "src": "",
+          "approved": false
+        },
+        "portrait": {
+          "src": "assets/images/profile/retrato-profesional.webp",
+          "alt": "Pedro Soto Almonacid, retrato profesional.",
+          "approved": true,
+          "width": 900,
+          "height": 1200
+        }
+      }
+    },
     "metadata": {},
     "territorialExperience": {
       "summary": "Una trayectoria de más de veinte trabajos de ingeniería territorial, desde predios de aproximadamente una hectárea hasta proyectos con más de diez propietarios y setenta lotes.",

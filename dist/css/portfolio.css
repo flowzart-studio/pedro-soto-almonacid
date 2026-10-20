@@ -64,7 +64,35 @@
 .catalog-footer{padding:25px 0}.catalog-footer .work-shell{display:flex;justify-content:space-between;align-items:center;gap:25px;font-size:11px;color:#b7c1c8}.catalog-footer a{color:#e7b38d;text-decoration:none;min-height:44px;display:flex;align-items:center}
 .catalog-noscript{font-size:12px;color:#b7c1c8;margin:25px 0}
 .work-card:target{outline:1px solid #d9a27c;outline-offset:10px}
-@media(hover:hover) and (prefers-reduced-motion:no-preference){.work-card:hover .work-visual>img{transform:scale(1.025)}.work-image-link span{transition:background .2s,transform .2s}.work-image-link:hover span{background:#d9a27c;color:#151a1f;transform:rotate(5deg)}}
+/* Interaction styles are shared by the home selection and unchanged catalogue. */
+.cinema-v2 #site-nav a,.cinema-contact-link,.cinema-project-link,.work-catalog-link,.work-foot a,.work-selection-bottom>a,.contact-link,.catalog-back{transition:color .22s,background-color .22s,border-color .22s,box-shadow .22s}
+.cinema-v2 #site-nav a{position:relative}
+.cinema-v2 #site-nav a::after{content:"";position:absolute;inset:auto 0 -4px;height:1px;background:currentColor;transform:scaleX(0);transform-origin:left;transition:transform .25s}
+.cinema-v2 #site-nav a:focus-visible::after,.cinema-v2 #site-nav a[aria-current=page]::after{transform:scaleX(1)}
+.work-visual{transition:border-color .25s,box-shadow .25s}
+.work-visual>img{transition:transform .45s cubic-bezier(.22,.61,.36,1)}
+.work-image-link span,.work-foot a span,.work-catalog-link b,.work-selection-bottom>a>span,.cinema-contact-link>span,.cinema-project-link>span{transition:transform .25s,background-color .25s,color .25s}
+.work-card:focus-within .work-visual{border-color:#e7b38da0;box-shadow:0 0 0 1px #e7b38d35}
+.work-card:focus-within .work-image-link span{background:#d9a27c;color:#151a1f}
+.catalog-category-options button,.catalog-type select{transition:background-color .2s,border-color .2s,color .2s,box-shadow .2s}
+.catalog-category-options button[aria-pressed=true]{box-shadow:inset 0 -3px #151a1f35}
+.cinema-v2 a:focus-visible,.cinema-v2 button:focus-visible,.cinema-v2 select:focus-visible{outline:2px solid #efba91;outline-offset:5px}
+@media(hover:hover){
+ .cinema-v2 #site-nav a:hover::after{transform:scaleX(1)}
+ .cinema-contact-link:hover{background:#ffd1ad;box-shadow:0 0 22px #efba9120}
+ .cinema-project-link:hover,.work-catalog-link:hover,.work-foot a:hover,.work-selection-bottom>a:hover,.contact-link:hover,.catalog-back:hover{color:#efba91;border-color:#efba91}
+ .work-card:hover .work-visual{border-color:#e7b38da0;box-shadow:0 0 18px #e7b38d12}
+ .work-image-link:hover span{background:#d9a27c;color:#151a1f}
+ .catalog-category-options button:hover:not([aria-pressed=true]){background:#d9a27c18;border-color:#d9a27c}
+ .catalog-type select:hover{border-color:#d9a27c}
+}
+@media(hover:hover) and (prefers-reduced-motion:no-preference){
+ .work-card:hover .work-visual>img{transform:scale(1.035)}
+ .work-card:hover .work-image-link span,.work-image-link:hover span,.work-foot a:hover span,.work-catalog-link:hover b,.work-selection-bottom>a:hover>span,.cinema-contact-link:hover>span,.cinema-project-link:hover>span{transform:translate(3px,-3px)}
+}
+@media(prefers-reduced-motion:no-preference){.work-card:focus-within .work-image-link span{transform:translate(2px,-2px)}.catalog-category-options button:active{transform:translateY(1px)}}
+.cinema-contact-link:active,.work-catalog-link:active,.work-foot a:active,.catalog-category-options button:active{filter:brightness(1.12)}
+@media(prefers-reduced-motion:reduce){.cinema-v2 a,.cinema-v2 button,.cinema-v2 select,.cinema-v2 a::after,.cinema-v2 a span,.work-visual{transition:none!important}}
 @media(max-width:1100px){.work-shell{width:calc(100% - 64px)}.work-featured{grid-column:span 6}.work-featured:nth-child(-n+2) h3{font-size:27px}.catalog-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.catalog-filters{align-items:start;flex-direction:column;gap:20px}.catalog-type{display:flex;align-items:center;gap:20px}.catalog-type label{margin:0}.catalog-title-row{gap:25px}.catalog-title-row>div>p{font-size:12px}}
 @media(max-width:720px){
  .work-shell{width:calc(100% - 40px)}.featured-work{padding-top:52px}.work-eyebrow{font-size:8px;margin-bottom:20px}.work-section-head{display:block;margin-bottom:28px}.work-section-head h2{font-size:35px}.work-section-aside{min-width:0;margin-top:25px}.work-section-aside p{font-size:12px}.work-catalog-link{font-size:12px}

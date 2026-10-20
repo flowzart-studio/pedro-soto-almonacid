@@ -1,0 +1,33 @@
+/* Atmosphere stays inside the approved section boxes. */
+.cinema-v2:not(.portfolio-page) .cinema-hero::after{content:"";position:absolute;inset:auto 0 0;height:clamp(48px,7vw,104px);z-index:4;pointer-events:none;background:linear-gradient(transparent,#0d1217)}
+.editorial-about::before,.editorial-about::after{content:"";position:absolute;inset:0 0 auto;height:48px;z-index:-1;pointer-events:none;background:linear-gradient(#0d1217,transparent)}
+.editorial-about::after{inset:auto 0 0;background:linear-gradient(transparent,#171f24)}
+#trabajos.featured-work{border-top-color:transparent}
+/* Only explicit BR-separated lines are wrapped. Natural wrapping is unchanged. */
+h2>.story-line{display:block;color:inherit!important;font:inherit;letter-spacing:inherit}
+/* Finite classes are added on intersection and removed at animationend.
+   No pre-hidden/ready state: missing JS/observer always leaves readable content. */
+@media(prefers-reduced-motion:no-preference){
+ .section-enter{animation:section-arrive 780ms cubic-bezier(.22,.61,.36,1) var(--section-delay,0ms) both}
+ .section-enter.section-label{animation-duration:650ms;--section-distance:16px}
+ .section-enter.section-image{animation-name:section-image-arrive;animation-duration:820ms}
+ .section-enter.section-copy{--section-distance:22px}
+ .section-enter.section-quiet{animation-duration:680ms;--section-distance:12px;--section-start:.35}
+ .section-enter.section-step{animation-duration:700ms;--section-distance:20px}
+ #proceso .process-list[data-story-ready]{position:relative}
+ #proceso .process-list[data-story-ready]::after{content:"";position:absolute;inset:-1px 0 auto;height:1px;background:#efba91;pointer-events:none;transform-origin:left;transform:scaleX(var(--story-progress,0))}
+ #proceso .process-list[data-story-ready] li::before{background:#53616a;transition:background .3s,box-shadow .3s}
+ #proceso .process-list[data-story-ready] li h3{color:#9aa7b2;transition:color .3s}
+ #proceso .process-list[data-story-ready] li.story-step-active h3{color:#f2f3f1}
+ #proceso .process-list[data-story-ready] li.story-step-active::before{background:#efba91;box-shadow:0 0 10px #efba9160}
+ #proceso .process-list[data-story-ready] li.story-step-active>.mono{color:#efba91}
+}
+@keyframes section-arrive{from{opacity:var(--section-start,0);transform:translateY(var(--section-distance,26px))}to{opacity:1;transform:translateY(0)}}
+@keyframes section-image-arrive{from{opacity:.15;transform:translateY(16px) scale(1.04)}to{opacity:1;transform:translateY(0) scale(1)}}
+@media(max-width:1000px) and (prefers-reduced-motion:no-preference){
+ #proceso .process-list[data-story-ready]::after{inset:0 auto 0 -8px;width:1px;height:auto;transform-origin:top;transform:scaleY(var(--story-progress,0))}
+}
+@media(prefers-reduced-motion:reduce){
+ .section-enter{animation:none!important;opacity:1!important;transform:none!important}
+ #proceso .process-list::after{content:none!important}
+}
