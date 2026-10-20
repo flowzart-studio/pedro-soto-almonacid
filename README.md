@@ -1,3 +1,34 @@
+# Flowzart Studio V2 — estado de cierre
+
+Actualización: 20 de octubre de 2026. Flowzart V2 publicada mediante el procedimiento existente de GitHub Pages. Estructura, secciones, textos y microinteracciones aprobados; 18 fichas y seis destacados. Se inició el reemplazo progresivo de imágenes temporales por fotografías auténticas, planos y capturas de aplicaciones.
+
+Sitio: https://flowzart-studio.github.io/pedro-soto-almonacid/
+
+Último lote: 19 imágenes incorporadas en DIS-01 Corte y grabado láser, ING-02 Subdivisión de predios, LAB-01 Código de Hammurabi, LAB-02 Expedientes del SAG, TEC-03 Costeo y TEC-04 Punto Deportivo Digital. Portadas nuevas en DIS-01, ING-02 y LAB-02; las otras tres portadas se conservaron. Material aprobado para publicación; originales intactos fuera del despliegue.
+
+Portadas temporales pendientes (11):
+- ING-03 — Estudios de prefactibilidad y cálculo.
+- ING-04 — Estudios de títulos.
+- ING-05 — Gestión de trámites y expedientes.
+- ING-06 — Gestión documental y normativa.
+- ING-07 — Autorizaciones sanitarias.
+- TEC-01 — Desarrollo de aplicaciones.
+- TEC-02 — Automatización de procesos.
+- TEC-06 — Gestión digital de expedientes.
+- DIS-02 — Dioramas y prototipado.
+- DIS-03 — Diseño y producción gráfica.
+- LAB-01 — Código de Hammurabi (ya tiene dos capturas reales en galería; falta seleccionar una portada).
+
+Pendiente: continuar sustituyendo estas portadas y completar imágenes o galerías cuando el propietario aporte material; revisar las nuevas fotografías después de integrarlas. Mantener intacto el diseño general aprobado. No hay nuevos cambios de diseño planificados.
+
+Para retomar en Codex: abrir el repositorio local original y leer este estado. La fuente V2 vigente está en prototypes/flowzart-motion-v2/v2/content/portfolio.json; el dist de la raíz y los primeros documentos describen etapas históricas. Los originales se entregan en prototypes/flowzart-motion-v2/source-assets/portafolio/<ID>/. Reutilizar build-portfolio.cjs para generar index.html y portafolio.html; no ejecutar build-prototype.cjs sobre la V2 actual. Revisar en http://127.0.0.1:4186/v2/portafolio.html. Acumular los siguientes cambios localmente y publicar solo cuando el propietario lo solicite.
+
+Se publica exclusivamente el paquete dist desde la copia Git aislada output/publication/flowzart-release, rama main. Fuente, originales, QA, herramientas y editor permanecen en el repositorio local original; esa copia Git contiene el sitio distribuido, no el espacio de trabajo de desarrollo completo. Workflow existente: pages.yml por workflow_dispatch. Consultar git log y Actions para identificar el último commit desplegado.
+
+Validación de cierre: generador repetible, 28 pruebas V2 aprobadas; se comprueban también el paquete público y las rutas en el sitio desplegado. No se cambian portada, cuatro vídeos, animaciones, banner, retrato, navegación, contacto ni editor.
+
+## Historial de la versión anterior
+
 # Sitio profesional Pedro Soto Almonacid — contenido v0.3 local
 
 **Del análisis a la solución.** Portafolio multidisciplinario de ingeniería, tecnología y diseño. El diseño v0.2 se conserva y se incorporan formación, trayectoria, contacto y contexto territorial en v0.3. Los datos aún desconocidos se mantienen pendientes. Publicación inicial verificada: https://flowzart-studio.github.io/pedro-soto-almonacid/ Repositorio: https://github.com/flowzart-studio/pedro-soto-almonacid. Commit funcional desplegado: `ac071417331a6b4f62860e51f87bc6b7ce99de16`.

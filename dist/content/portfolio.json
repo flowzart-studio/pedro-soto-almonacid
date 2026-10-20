@@ -117,17 +117,55 @@
       "description": "Desarrollo de proyectos de subdivisión predial, considerando el análisis del terreno, la elaboración de antecedentes técnicos y los requisitos aplicables para definir nuevas unidades territoriales.",
       "featuredRank": 2,
       "image": {
-        "src": "assets/images/portfolio/ING-02/cover.svg",
-        "alt": "Ilustración conceptual de subdivisión de predios; visual temporal.",
-        "kind": "temporary",
+        "src": "assets/images/portfolio/ING-02/portada-1884327c46.webp",
+        "alt": "Plano de subdivisión con tres lotes, cotas y servidumbre sobre una imagen aérea.",
+        "kind": "provided",
         "fallback": "assets/images/portfolio/ING-02/cover.svg",
-        "objectPosition": "top",
-        "note": "Ilustración editorial de referencia; no representa un trabajo ejecutado."
+        "objectPosition": "center",
+        "note": "Imagen aportada por el propietario; original completo conservado en la galería."
       },
-      "gallery": [],
+      "gallery": [
+        {
+          "src": "assets/images/portfolio/ING-02/portada-completa-1884327c46.webp",
+          "alt": "Plano de subdivisión con tres lotes, cotas y servidumbre sobre una imagen aérea.",
+          "kind": "provided",
+          "evidenceId": "IMG-1884327c46482a497969ffb3b012c3a19c4453bf11a4ca5a2628fce820155a3b"
+        },
+        {
+          "src": "assets/images/portfolio/ING-02/galeria-01-64a65da27d.webp",
+          "alt": "Plano de subdivisión predial sobre imagen aérea, con lotes y accesos propuestos.",
+          "kind": "provided",
+          "evidenceId": "IMG-64a65da27df5319c71d090bcb50642b0ef1b025791b8965acd0c360ae499b860"
+        },
+        {
+          "src": "assets/images/portfolio/ING-02/galeria-02-d73987d81d.webp",
+          "alt": "Plano de subdivisión sobre imagen aérea, con deslindes y superficies de lotes.",
+          "kind": "provided",
+          "evidenceId": "IMG-d73987d81d349bf2fe515e74beea0aa9a6d21c0634f866bec4688ff3c0b7c5bd"
+        }
+      ],
       "longDescription": "",
       "links": [],
-      "evidence": [],
+      "evidence": [
+        {
+          "id": "IMG-64a65da27df5319c71d090bcb50642b0ef1b025791b8965acd0c360ae499b860",
+          "description": "Plano de subdivisión predial sobre imagen aérea, con lotes y accesos propuestos.",
+          "file": "assets/images/portfolio/ING-02/galeria-01-64a65da27d.webp",
+          "publicationApproved": true
+        },
+        {
+          "id": "IMG-d73987d81d349bf2fe515e74beea0aa9a6d21c0634f866bec4688ff3c0b7c5bd",
+          "description": "Plano de subdivisión sobre imagen aérea, con deslindes y superficies de lotes.",
+          "file": "assets/images/portfolio/ING-02/galeria-02-d73987d81d.webp",
+          "publicationApproved": true
+        },
+        {
+          "id": "IMG-1884327c46482a497969ffb3b012c3a19c4453bf11a4ca5a2628fce820155a3b",
+          "description": "Plano de subdivisión con tres lotes, cotas y servidumbre sobre una imagen aérea.",
+          "file": "assets/images/portfolio/ING-02/portada-completa-1884327c46.webp",
+          "publicationApproved": true
+        }
+      ],
       "legacyEntries": [
         {
           "id": "ING-002",
@@ -317,6 +355,24 @@
           "alt": "Captura de la interfaz de Costeo.",
           "kind": "capture",
           "evidenceId": "IMG-465db79397544c20c0f2577b5a40af7b910569caf0ae34065e942552274183d6"
+        },
+        {
+          "src": "assets/images/portfolio/TEC-03/galeria-01-89b7666900.webp",
+          "alt": "Vista de productos y sus costos en la aplicación Costeo.",
+          "kind": "capture",
+          "evidenceId": "IMG-89b76669005ee3c32835103d89b9e9535bfc240af58b0a6d447d2a91027dd1d8"
+        },
+        {
+          "src": "assets/images/portfolio/TEC-03/galeria-02-3749d201b7.webp",
+          "alt": "Listado de componentes e insumos en Costeo.",
+          "kind": "capture",
+          "evidenceId": "IMG-3749d201b7526c39ec31c672d3db00b9171bb94e307c16763d3d827586aedbf7"
+        },
+        {
+          "src": "assets/images/portfolio/TEC-03/galeria-03-b98136a3b3.webp",
+          "alt": "Vista de presupuestos y cotizaciones en Costeo.",
+          "kind": "capture",
+          "evidenceId": "IMG-b98136a3b373f12f7b7c0c581b2ffe91c35e1dece41bbf1411f966fc1bc61a40"
         }
       ],
       "longDescription": "",
@@ -326,6 +382,24 @@
           "id": "IMG-465db79397544c20c0f2577b5a40af7b910569caf0ae34065e942552274183d6",
           "description": "Fotografía incorporada desde el editor local",
           "file": "assets/images/projects/TEC-002/465db79397544c20c0f2577b5a40af7b910569caf0ae34065e942552274183d6.png",
+          "publicationApproved": true
+        },
+        {
+          "id": "IMG-89b76669005ee3c32835103d89b9e9535bfc240af58b0a6d447d2a91027dd1d8",
+          "description": "Vista de productos y sus costos en la aplicación Costeo.",
+          "file": "assets/images/portfolio/TEC-03/galeria-01-89b7666900.webp",
+          "publicationApproved": true
+        },
+        {
+          "id": "IMG-3749d201b7526c39ec31c672d3db00b9171bb94e307c16763d3d827586aedbf7",
+          "description": "Listado de componentes e insumos en Costeo.",
+          "file": "assets/images/portfolio/TEC-03/galeria-02-3749d201b7.webp",
+          "publicationApproved": true
+        },
+        {
+          "id": "IMG-b98136a3b373f12f7b7c0c581b2ffe91c35e1dece41bbf1411f966fc1bc61a40",
+          "description": "Vista de presupuestos y cotizaciones en Costeo.",
+          "file": "assets/images/portfolio/TEC-03/galeria-03-b98136a3b3.webp",
           "publicationApproved": true
         }
       ],
@@ -394,6 +468,36 @@
           "alt": "Captura del panel de administración de Punto Deportivo Digital.",
           "kind": "capture",
           "evidenceId": "IMG-0c111affc71c69550b9d4e2ceb70bcd825804a1cb417a65a77779a524d34ec08"
+        },
+        {
+          "src": "assets/images/portfolio/TEC-04/galeria-01-fbbf0129a8.webp",
+          "alt": "Calendario público de actividades de Punto Deportivo Digital.",
+          "kind": "capture",
+          "evidenceId": "IMG-fbbf0129a8b47ca27f0d68d872123f936ce90ad32280acf9e9e2eec306adb58b"
+        },
+        {
+          "src": "assets/images/portfolio/TEC-04/galeria-02-0c2a98e378.webp",
+          "alt": "Sitios y enlaces de interés en Punto Deportivo Digital.",
+          "kind": "capture",
+          "evidenceId": "IMG-0c2a98e378942b0fa7e1e98ef6c28446bdf10760a198b258dd54a1283a516a7f"
+        },
+        {
+          "src": "assets/images/portfolio/TEC-04/galeria-03-05a79563a5.webp",
+          "alt": "Panel del centro de gestión de Punto Deportivo Digital.",
+          "kind": "capture",
+          "evidenceId": "IMG-05a79563a5af4f7154546cefddcfe204899dec70b450d86a6ab1a6df7b15528f"
+        },
+        {
+          "src": "assets/images/portfolio/TEC-04/galeria-04-b438ae7b4a.webp",
+          "alt": "Vista de ocupación semanal de recintos en Punto Deportivo Digital.",
+          "kind": "capture",
+          "evidenceId": "IMG-b438ae7b4aa25db5c195e73c8f5711d3dc08f16d941ec957b927ea3f75647f98"
+        },
+        {
+          "src": "assets/images/portfolio/TEC-04/galeria-05-1db4a997d5.webp",
+          "alt": "Calendario de actividades del centro de gestión de Punto Deportivo Digital.",
+          "kind": "capture",
+          "evidenceId": "IMG-1db4a997d5584cd0370972e9760427d6588d8eb65d79aa7d8e6247a2dbece94a"
         }
       ],
       "longDescription": "",
@@ -409,6 +513,36 @@
           "id": "IMG-0c111affc71c69550b9d4e2ceb70bcd825804a1cb417a65a77779a524d34ec08",
           "description": "Fotografía incorporada desde el editor local",
           "file": "assets/images/projects/TEC-001/0c111affc71c69550b9d4e2ceb70bcd825804a1cb417a65a77779a524d34ec08.png",
+          "publicationApproved": true
+        },
+        {
+          "id": "IMG-fbbf0129a8b47ca27f0d68d872123f936ce90ad32280acf9e9e2eec306adb58b",
+          "description": "Calendario público de actividades de Punto Deportivo Digital.",
+          "file": "assets/images/portfolio/TEC-04/galeria-01-fbbf0129a8.webp",
+          "publicationApproved": true
+        },
+        {
+          "id": "IMG-0c2a98e378942b0fa7e1e98ef6c28446bdf10760a198b258dd54a1283a516a7f",
+          "description": "Sitios y enlaces de interés en Punto Deportivo Digital.",
+          "file": "assets/images/portfolio/TEC-04/galeria-02-0c2a98e378.webp",
+          "publicationApproved": true
+        },
+        {
+          "id": "IMG-05a79563a5af4f7154546cefddcfe204899dec70b450d86a6ab1a6df7b15528f",
+          "description": "Panel del centro de gestión de Punto Deportivo Digital.",
+          "file": "assets/images/portfolio/TEC-04/galeria-03-05a79563a5.webp",
+          "publicationApproved": true
+        },
+        {
+          "id": "IMG-b438ae7b4aa25db5c195e73c8f5711d3dc08f16d941ec957b927ea3f75647f98",
+          "description": "Vista de ocupación semanal de recintos en Punto Deportivo Digital.",
+          "file": "assets/images/portfolio/TEC-04/galeria-04-b438ae7b4a.webp",
+          "publicationApproved": true
+        },
+        {
+          "id": "IMG-1db4a997d5584cd0370972e9760427d6588d8eb65d79aa7d8e6247a2dbece94a",
+          "description": "Calendario de actividades del centro de gestión de Punto Deportivo Digital.",
+          "file": "assets/images/portfolio/TEC-04/galeria-05-1db4a997d5.webp",
           "publicationApproved": true
         }
       ],
@@ -568,17 +702,67 @@
       "description": "Diseño y fabricación de piezas personalizadas mediante tecnologías de corte y grabado láser. Desarrollo de productos, elementos decorativos, señalética y soluciones adaptadas a distintos requerimientos.",
       "featuredRank": 6,
       "image": {
-        "src": "assets/images/portfolio/DIS-01/cover.svg",
-        "alt": "Ilustración conceptual de corte y grabado láser; visual temporal.",
-        "kind": "temporary",
+        "src": "assets/images/portfolio/DIS-01/portada-82fe7d9004.webp",
+        "alt": "Piezas de madera con grabados personalizados de iniciales y motivos florales.",
+        "kind": "provided",
         "fallback": "assets/images/portfolio/DIS-01/cover.svg",
-        "objectPosition": "top",
-        "note": "Ilustración editorial de referencia; no representa un trabajo ejecutado."
+        "objectPosition": "center",
+        "note": "Imagen aportada por el propietario; original completo conservado en la galería."
       },
-      "gallery": [],
+      "gallery": [
+        {
+          "src": "assets/images/portfolio/DIS-01/portada-completa-82fe7d9004.webp",
+          "alt": "Piezas de madera con grabados personalizados de iniciales y motivos florales.",
+          "kind": "provided",
+          "evidenceId": "IMG-82fe7d90047785de2c0b9a023706e07c862950c2f28ad1a54759b5a4ccd91051"
+        },
+        {
+          "src": "assets/images/portfolio/DIS-01/galeria-01-3330b6886c.webp",
+          "alt": "Soporte de madera para teléfono con grabado personalizado.",
+          "kind": "provided",
+          "evidenceId": "IMG-3330b6886ca053ca11e03d531ba8e111736c938b91c02813603f4ae1185bd30f"
+        },
+        {
+          "src": "assets/images/portfolio/DIS-01/galeria-02-cf10499992.webp",
+          "alt": "Pieza de madera grabada con diseño de Cerveza Kukan.",
+          "kind": "provided",
+          "evidenceId": "IMG-cf10499992d0a39278be9e9423b31c1d73a4f3a76e3e11f95672d6fed494cab6"
+        },
+        {
+          "src": "assets/images/portfolio/DIS-01/galeria-03-e2e8073bc1.webp",
+          "alt": "Mapa de Chile en madera, presentado en un marco.",
+          "kind": "provided",
+          "evidenceId": "IMG-e2e8073bc11b76d866fc4e2a5947b48fd4ffc81550ec3d93dcce2ef1b4a2d7f2"
+        }
+      ],
       "longDescription": "",
       "links": [],
-      "evidence": [],
+      "evidence": [
+        {
+          "id": "IMG-3330b6886ca053ca11e03d531ba8e111736c938b91c02813603f4ae1185bd30f",
+          "description": "Soporte de madera para teléfono con grabado personalizado.",
+          "file": "assets/images/portfolio/DIS-01/galeria-01-3330b6886c.webp",
+          "publicationApproved": true
+        },
+        {
+          "id": "IMG-cf10499992d0a39278be9e9423b31c1d73a4f3a76e3e11f95672d6fed494cab6",
+          "description": "Pieza de madera grabada con diseño de Cerveza Kukan.",
+          "file": "assets/images/portfolio/DIS-01/galeria-02-cf10499992.webp",
+          "publicationApproved": true
+        },
+        {
+          "id": "IMG-e2e8073bc11b76d866fc4e2a5947b48fd4ffc81550ec3d93dcce2ef1b4a2d7f2",
+          "description": "Mapa de Chile en madera, presentado en un marco.",
+          "file": "assets/images/portfolio/DIS-01/galeria-03-e2e8073bc1.webp",
+          "publicationApproved": true
+        },
+        {
+          "id": "IMG-82fe7d90047785de2c0b9a023706e07c862950c2f28ad1a54759b5a4ccd91051",
+          "description": "Piezas de madera con grabados personalizados de iniciales y motivos florales.",
+          "file": "assets/images/portfolio/DIS-01/portada-completa-82fe7d9004.webp",
+          "publicationApproved": true
+        }
+      ],
       "legacyEntries": [
         {
           "id": "DIS-001",
@@ -674,10 +858,36 @@
         "objectPosition": "top",
         "note": "Ilustración editorial de referencia; no representa un trabajo ejecutado."
       },
-      "gallery": [],
+      "gallery": [
+        {
+          "src": "assets/images/portfolio/LAB-01/galeria-01-ea948cab93.webp",
+          "alt": "Explorador de disposiciones del Código de Hammurabi.",
+          "kind": "capture",
+          "evidenceId": "IMG-ea948cab937d48e0348c212bec2db865037831901f3b644167209da9649dd3c1"
+        },
+        {
+          "src": "assets/images/portfolio/LAB-01/galeria-02-832f244d45.webp",
+          "alt": "Listado de disposiciones del Código de Hammurabi en su interfaz de consulta.",
+          "kind": "capture",
+          "evidenceId": "IMG-832f244d45aea9e4f184d9f1412fc9b7561f0d3ba4f33b883964b5975814cea5"
+        }
+      ],
       "longDescription": "",
       "links": [],
-      "evidence": [],
+      "evidence": [
+        {
+          "id": "IMG-ea948cab937d48e0348c212bec2db865037831901f3b644167209da9649dd3c1",
+          "description": "Explorador de disposiciones del Código de Hammurabi.",
+          "file": "assets/images/portfolio/LAB-01/galeria-01-ea948cab93.webp",
+          "publicationApproved": true
+        },
+        {
+          "id": "IMG-832f244d45aea9e4f184d9f1412fc9b7561f0d3ba4f33b883964b5975814cea5",
+          "description": "Listado de disposiciones del Código de Hammurabi en su interfaz de consulta.",
+          "file": "assets/images/portfolio/LAB-01/galeria-02-832f244d45.webp",
+          "publicationApproved": true
+        }
+      ],
       "legacyEntries": []
     },
     {
@@ -688,17 +898,43 @@
       "description": "Herramienta propia desarrollada para organizar trabajos y expedientes asociados al SAG, permitiendo estructurar documentos, registrar antecedentes y mostrar información de manera más clara a los clientes.",
       "featuredRank": null,
       "image": {
-        "src": "assets/images/portfolio/LAB-02/cover.svg",
-        "alt": "Ilustración conceptual de expedientes del sag; visual temporal.",
-        "kind": "temporary",
+        "src": "assets/images/portfolio/LAB-02/portada-ffaffc804b.webp",
+        "alt": "Listado de proyectos en la aplicación Expedientes del SAG.",
+        "kind": "capture",
         "fallback": "assets/images/portfolio/LAB-02/cover.svg",
-        "objectPosition": "top",
-        "note": "Ilustración editorial de referencia; no representa un trabajo ejecutado."
+        "objectPosition": "center",
+        "note": "Imagen aportada por el propietario; original completo conservado en la galería."
       },
-      "gallery": [],
+      "gallery": [
+        {
+          "src": "assets/images/portfolio/LAB-02/portada-completa-ffaffc804b.webp",
+          "alt": "Listado de proyectos en la aplicación Expedientes del SAG.",
+          "kind": "capture",
+          "evidenceId": "IMG-ffaffc804bcd21d083aa2a40d28c8f341b62977060ededd8ffab3dc4525bb425"
+        },
+        {
+          "src": "assets/images/portfolio/LAB-02/galeria-01-0881fc9342.webp",
+          "alt": "Detalle de un lote en la aplicación Expedientes del SAG.",
+          "kind": "capture",
+          "evidenceId": "IMG-0881fc93427254953852a3ee437ad57f9b13572824e7b92f6d8f954c76d99f56"
+        }
+      ],
       "longDescription": "",
       "links": [],
-      "evidence": [],
+      "evidence": [
+        {
+          "id": "IMG-0881fc93427254953852a3ee437ad57f9b13572824e7b92f6d8f954c76d99f56",
+          "description": "Detalle de un lote en la aplicación Expedientes del SAG.",
+          "file": "assets/images/portfolio/LAB-02/galeria-01-0881fc9342.webp",
+          "publicationApproved": true
+        },
+        {
+          "id": "IMG-ffaffc804bcd21d083aa2a40d28c8f341b62977060ededd8ffab3dc4525bb425",
+          "description": "Listado de proyectos en la aplicación Expedientes del SAG.",
+          "file": "assets/images/portfolio/LAB-02/portada-completa-ffaffc804b.webp",
+          "publicationApproved": true
+        }
+      ],
       "legacyEntries": []
     }
   ]
