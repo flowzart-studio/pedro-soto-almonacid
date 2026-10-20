@@ -1,19 +1,14 @@
 name: Publicar sitio en GitHub Pages
-
-# Solo ejecución manual; subir commits no publica el sitio.
+# Copia pública: exclusivamente ejecución manual de un paquete ya revisado.
 on:
   workflow_dispatch:
-
 permissions:
   contents: read
-
 concurrency:
   group: github-pages
   cancel-in-progress: false
-
 jobs:
   deploy:
-    # Mantener la publicación limitada a la rama principal.
     if: github.ref == 'refs/heads/main'
     runs-on: ubuntu-latest
     permissions:
@@ -24,29 +19,18 @@ jobs:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
-      - name: Obtener repositorio
-        uses: actions/checkout@v6
-
-      - name: Configurar Node para comprobaciones sin dependencias
-        uses: actions/setup-node@v6
+      - uses: actions/checkout@v6
+      - uses: actions/setup-node@v6
         with:
           node-version: '24'
-          package-manager-cache: false
-
-      - name: Comprobar contenido y respaldo estático
+      - name: Comprobar paquete estático revisado
         run: |
           node --check dist/js/app.js
-          node --test tests/content.test.cjs
-          node scripts/sync-content.cjs --check
-
-      - name: Configurar Pages
-        uses: actions/configure-pages@v5
-
-      - name: Subir exclusivamente dist
-        uses: actions/upload-pages-artifact@v4
+          node --check dist/js/theme.js
+          node scripts/check-public-release.cjs
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v4
         with:
           path: dist
-
-      - name: Publicar
-        id: deployment
+      - id: deployment
         uses: actions/deploy-pages@v4

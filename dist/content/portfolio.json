@@ -1,0 +1,705 @@
+{
+  "schemaVersion": 1,
+  "title": "Portafolio de servicios, proyectos y laboratorio",
+  "categories": [
+    {
+      "id": "ingenieria",
+      "label": "Ingeniería",
+      "accent": "#d9a27c"
+    },
+    {
+      "id": "tecnologia",
+      "label": "Tecnología",
+      "accent": "#a7c8bc"
+    },
+    {
+      "id": "diseno-fabricacion",
+      "label": "Diseño y fabricación",
+      "accent": "#dbc194"
+    },
+    {
+      "id": "laboratorio",
+      "label": "Laboratorio",
+      "accent": "#c2b2da"
+    }
+  ],
+  "types": [
+    {
+      "id": "servicio",
+      "label": "Servicio"
+    },
+    {
+      "id": "proyecto",
+      "label": "Proyecto"
+    },
+    {
+      "id": "laboratorio",
+      "label": "Laboratorio"
+    }
+  ],
+  "items": [
+    {
+      "id": "ING-01",
+      "title": "Levantamientos topográficos",
+      "category": "ingenieria",
+      "type": "servicio",
+      "description": "Realización de levantamientos topográficos para conocer y representar las características físicas de terrenos. Elaboración de planos y antecedentes técnicos como base para proyectos, estudios y decisiones sobre el territorio.",
+      "featuredRank": 1,
+      "image": {
+        "src": "assets/images/projects/ING-001/6ac51c5701f136ba1c1a038f9737e233f58db639557388b7f245dc05432cf74a.png",
+        "alt": "Imagen aérea aportada con delimitación de predios.",
+        "kind": "provided",
+        "fallback": "assets/images/portfolio/ING-01/cover.svg",
+        "objectPosition": "top",
+        "note": "Imagen aportada al portafolio original."
+      },
+      "gallery": [
+        {
+          "src": "assets/images/projects/ING-001/6ac51c5701f136ba1c1a038f9737e233f58db639557388b7f245dc05432cf74a.png",
+          "alt": "Imagen aérea aportada con delimitación de predios.",
+          "kind": "provided",
+          "evidenceId": "IMG-6ac51c5701f136ba1c1a038f9737e233f58db639557388b7f245dc05432cf74a"
+        }
+      ],
+      "longDescription": "",
+      "links": [],
+      "evidence": [
+        {
+          "id": "IMG-6ac51c5701f136ba1c1a038f9737e233f58db639557388b7f245dc05432cf74a",
+          "description": "Fotografía incorporada desde el editor local",
+          "file": "assets/images/projects/ING-001/6ac51c5701f136ba1c1a038f9737e233f58db639557388b7f245dc05432cf74a.png",
+          "publicationApproved": true
+        }
+      ],
+      "legacyEntries": [
+        {
+          "id": "ING-001",
+          "title": "Levantamiento topográfico de terreno urbano, Puerto Varas",
+          "category": "Ingeniería",
+          "workType": "Levantamiento topográfico",
+          "location": "Puerto Varas",
+          "context": "Levantamiento topográfico y subdivisión predial son servicios complementarios y pueden formar parte de un mismo encargo.",
+          "solution": "",
+          "participation": "",
+          "tools": [],
+          "results": [],
+          "status": "",
+          "images": [
+            {
+              "src": "assets/images/projects/ING-001/6ac51c5701f136ba1c1a038f9737e233f58db639557388b7f245dc05432cf74a.png",
+              "alt": "Levantamiento",
+              "caption": "",
+              "evidenceId": "IMG-6ac51c5701f136ba1c1a038f9737e233f58db639557388b7f245dc05432cf74a",
+              "width": 1448,
+              "height": 1086
+            }
+          ],
+          "links": [],
+          "evidence": [
+            {
+              "id": "IMG-6ac51c5701f136ba1c1a038f9737e233f58db639557388b7f245dc05432cf74a",
+              "description": "Fotografía incorporada desde el editor local",
+              "file": "assets/images/projects/ING-001/6ac51c5701f136ba1c1a038f9737e233f58db639557388b7f245dc05432cf74a.png",
+              "publicationApproved": true
+            }
+          ],
+          "editorialStatus": "Alcance particular y evidencias por documentar",
+          "visible": true,
+          "coverImage": "assets/images/projects/ING-001/6ac51c5701f136ba1c1a038f9737e233f58db639557388b7f245dc05432cf74a.png"
+        }
+      ]
+    },
+    {
+      "id": "ING-02",
+      "title": "Subdivisión de predios",
+      "category": "ingenieria",
+      "type": "servicio",
+      "description": "Desarrollo de proyectos de subdivisión predial, considerando el análisis del terreno, la elaboración de antecedentes técnicos y los requisitos aplicables para definir nuevas unidades territoriales.",
+      "featuredRank": 2,
+      "image": {
+        "src": "assets/images/portfolio/ING-02/cover.svg",
+        "alt": "Ilustración conceptual de subdivisión de predios; visual temporal.",
+        "kind": "temporary",
+        "fallback": "assets/images/portfolio/ING-02/cover.svg",
+        "objectPosition": "top",
+        "note": "Ilustración editorial de referencia; no representa un trabajo ejecutado."
+      },
+      "gallery": [],
+      "longDescription": "",
+      "links": [],
+      "evidence": [],
+      "legacyEntries": [
+        {
+          "id": "ING-002",
+          "title": "Proyecto de subdivisión de predios rurales",
+          "category": "Ingeniería",
+          "workType": "Subdivisión predial rural",
+          "location": "",
+          "context": "Levantamiento topográfico y subdivisión predial son servicios complementarios y pueden formar parte de un mismo encargo.",
+          "participation": "",
+          "tools": [],
+          "results": [],
+          "status": "",
+          "images": [],
+          "links": [],
+          "evidence": [],
+          "editorialStatus": "Alcance particular y evidencias por documentar",
+          "supportingTool": "Desarrollo de una herramienta digital propia para la gestión y el seguimiento de expedientes relacionados con el SAG.",
+          "solution": ""
+        }
+      ]
+    },
+    {
+      "id": "ING-03",
+      "title": "Estudios de prefactibilidad y cálculo",
+      "category": "ingenieria",
+      "type": "servicio",
+      "description": "Evaluación preliminar de proyectos mediante análisis técnico, estimación de recursos, revisión de restricciones y elaboración de memorias de cálculo dentro del ámbito de las competencias profesionales correspondientes.",
+      "featuredRank": null,
+      "image": {
+        "src": "assets/images/portfolio/ING-03/cover.svg",
+        "alt": "Ilustración conceptual de estudios de prefactibilidad y cálculo; visual temporal.",
+        "kind": "temporary",
+        "fallback": "assets/images/portfolio/ING-03/cover.svg",
+        "objectPosition": "top",
+        "note": "Ilustración editorial de referencia; no representa un trabajo ejecutado."
+      },
+      "gallery": [],
+      "longDescription": "",
+      "links": [],
+      "evidence": [],
+      "legacyEntries": []
+    },
+    {
+      "id": "ING-04",
+      "title": "Estudios de títulos",
+      "category": "ingenieria",
+      "type": "servicio",
+      "description": "Revisión de antecedentes de dominio, documentación registral y requisitos normativos asociados a inmuebles y operaciones patrimoniales. Identificación de observaciones, preparación documental y apoyo en procesos de regularización o rectificación, según las exigencias del procedimiento correspondiente.",
+      "featuredRank": null,
+      "image": {
+        "src": "assets/images/portfolio/ING-04/cover.svg",
+        "alt": "Ilustración conceptual de estudios de títulos; visual temporal.",
+        "kind": "temporary",
+        "fallback": "assets/images/portfolio/ING-04/cover.svg",
+        "objectPosition": "top",
+        "note": "Ilustración editorial de referencia; no representa un trabajo ejecutado."
+      },
+      "gallery": [],
+      "longDescription": "",
+      "links": [],
+      "evidence": [],
+      "legacyEntries": []
+    },
+    {
+      "id": "ING-05",
+      "title": "Gestión de trámites y expedientes",
+      "category": "ingenieria",
+      "type": "servicio",
+      "description": "Preparación, organización y seguimiento de antecedentes para trámites ante organismos públicos y entidades privadas, apoyando la coordinación documental y el desarrollo de proyectos.",
+      "featuredRank": null,
+      "image": {
+        "src": "assets/images/portfolio/ING-05/cover.svg",
+        "alt": "Ilustración conceptual de gestión de trámites y expedientes; visual temporal.",
+        "kind": "temporary",
+        "fallback": "assets/images/portfolio/ING-05/cover.svg",
+        "objectPosition": "top",
+        "note": "Ilustración editorial de referencia; no representa un trabajo ejecutado."
+      },
+      "gallery": [],
+      "longDescription": "",
+      "links": [],
+      "evidence": [],
+      "legacyEntries": []
+    },
+    {
+      "id": "ING-06",
+      "title": "Gestión documental y normativa",
+      "category": "ingenieria",
+      "type": "servicio",
+      "description": "Recopilación, revisión y preparación de antecedentes para procesos administrativos y técnicos. Verificación de vigencias, requisitos documentales y cumplimiento de condiciones exigidas por organismos públicos y privados.",
+      "featuredRank": null,
+      "image": {
+        "src": "assets/images/portfolio/ING-06/cover.svg",
+        "alt": "Ilustración conceptual de gestión documental y normativa; visual temporal.",
+        "kind": "temporary",
+        "fallback": "assets/images/portfolio/ING-06/cover.svg",
+        "objectPosition": "top",
+        "note": "Ilustración editorial de referencia; no representa un trabajo ejecutado."
+      },
+      "gallery": [],
+      "longDescription": "",
+      "links": [],
+      "evidence": [],
+      "legacyEntries": []
+    },
+    {
+      "id": "ING-07",
+      "title": "Autorizaciones sanitarias",
+      "category": "ingenieria",
+      "type": "servicio",
+      "description": "Apoyo en la preparación de antecedentes, evaluación de requisitos y gestión de solicitudes de autorizaciones sanitarias para actividades comerciales, de acuerdo con las exigencias de la autoridad competente.",
+      "featuredRank": null,
+      "image": {
+        "src": "assets/images/portfolio/ING-07/cover.svg",
+        "alt": "Ilustración conceptual de autorizaciones sanitarias; visual temporal.",
+        "kind": "temporary",
+        "fallback": "assets/images/portfolio/ING-07/cover.svg",
+        "objectPosition": "top",
+        "note": "Ilustración editorial de referencia; no representa un trabajo ejecutado."
+      },
+      "gallery": [],
+      "longDescription": "",
+      "links": [],
+      "evidence": [],
+      "legacyEntries": []
+    },
+    {
+      "id": "TEC-01",
+      "title": "Desarrollo de aplicaciones",
+      "category": "tecnologia",
+      "type": "servicio",
+      "description": "Diseño y desarrollo de herramientas digitales adaptadas a necesidades específicas. Desde la identificación de un problema hasta la creación de aplicaciones que permiten organizar información, automatizar procesos y facilitar tareas cotidianas.",
+      "featuredRank": 3,
+      "image": {
+        "src": "assets/images/portfolio/TEC-01/cover.svg",
+        "alt": "Ilustración conceptual de desarrollo de aplicaciones; visual temporal.",
+        "kind": "temporary",
+        "fallback": "assets/images/portfolio/TEC-01/cover.svg",
+        "objectPosition": "top",
+        "note": "Ilustración editorial de referencia; no representa un trabajo ejecutado."
+      },
+      "gallery": [],
+      "longDescription": "",
+      "links": [],
+      "evidence": [],
+      "legacyEntries": []
+    },
+    {
+      "id": "TEC-02",
+      "title": "Automatización de procesos",
+      "category": "tecnologia",
+      "type": "servicio",
+      "description": "Diseño de soluciones digitales orientadas a reducir tareas repetitivas, organizar información y mejorar procesos de trabajo mediante herramientas tecnológicas adaptadas a cada necesidad.",
+      "featuredRank": null,
+      "image": {
+        "src": "assets/images/portfolio/TEC-02/cover.svg",
+        "alt": "Ilustración conceptual de automatización de procesos; visual temporal.",
+        "kind": "temporary",
+        "fallback": "assets/images/portfolio/TEC-02/cover.svg",
+        "objectPosition": "top",
+        "note": "Ilustración editorial de referencia; no representa un trabajo ejecutado."
+      },
+      "gallery": [],
+      "longDescription": "",
+      "links": [],
+      "evidence": [],
+      "legacyEntries": []
+    },
+    {
+      "id": "TEC-03",
+      "title": "Costeo",
+      "category": "tecnologia",
+      "type": "proyecto",
+      "description": "Aplicación desarrollada para organizar insumos, equipos y otros componentes de costo, permitiendo calcular presupuestos y cotizaciones con mayor claridad. Una herramienta orientada a tomar decisiones comerciales basadas en costos reales.",
+      "featuredRank": 4,
+      "image": {
+        "src": "assets/images/projects/TEC-002/465db79397544c20c0f2577b5a40af7b910569caf0ae34065e942552274183d6.png",
+        "alt": "Captura de la interfaz de Costeo.",
+        "kind": "capture",
+        "fallback": "assets/images/portfolio/TEC-03/cover.svg",
+        "objectPosition": "top",
+        "note": "Captura existente del proyecto."
+      },
+      "gallery": [
+        {
+          "src": "assets/images/projects/TEC-002/465db79397544c20c0f2577b5a40af7b910569caf0ae34065e942552274183d6.png",
+          "alt": "Captura de la interfaz de Costeo.",
+          "kind": "capture",
+          "evidenceId": "IMG-465db79397544c20c0f2577b5a40af7b910569caf0ae34065e942552274183d6"
+        }
+      ],
+      "longDescription": "",
+      "links": [],
+      "evidence": [
+        {
+          "id": "IMG-465db79397544c20c0f2577b5a40af7b910569caf0ae34065e942552274183d6",
+          "description": "Fotografía incorporada desde el editor local",
+          "file": "assets/images/projects/TEC-002/465db79397544c20c0f2577b5a40af7b910569caf0ae34065e942552274183d6.png",
+          "publicationApproved": true
+        }
+      ],
+      "legacyEntries": [
+        {
+          "id": "TEC-002",
+          "title": "Costeo",
+          "category": "Tecnología",
+          "workType": "",
+          "location": "",
+          "context": "Una gran app",
+          "solution": "",
+          "participation": "",
+          "tools": [],
+          "results": [],
+          "status": "",
+          "images": [
+            {
+              "src": "assets/images/projects/TEC-002/465db79397544c20c0f2577b5a40af7b910569caf0ae34065e942552274183d6.png",
+              "alt": "Miniatura real",
+              "caption": "",
+              "evidenceId": "IMG-465db79397544c20c0f2577b5a40af7b910569caf0ae34065e942552274183d6",
+              "width": 1600,
+              "height": 900
+            }
+          ],
+          "links": [],
+          "evidence": [
+            {
+              "id": "IMG-465db79397544c20c0f2577b5a40af7b910569caf0ae34065e942552274183d6",
+              "description": "Fotografía incorporada desde el editor local",
+              "file": "assets/images/projects/TEC-002/465db79397544c20c0f2577b5a40af7b910569caf0ae34065e942552274183d6.png",
+              "publicationApproved": true
+            }
+          ],
+          "editorialStatus": "Pendiente de documentar",
+          "visible": true,
+          "coverImage": "assets/images/projects/TEC-002/465db79397544c20c0f2577b5a40af7b910569caf0ae34065e942552274183d6.png"
+        }
+      ]
+    },
+    {
+      "id": "TEC-04",
+      "title": "Punto Deportivo Digital",
+      "category": "tecnologia",
+      "type": "proyecto",
+      "description": "Plataforma digital orientada a organizar y consultar información de actividades deportivas, talleres, recintos y horarios, facilitando el acceso a la oferta deportiva desde una interfaz centralizada.",
+      "featuredRank": 5,
+      "image": {
+        "src": "assets/images/projects/TEC-001/ce6405032303f893412493f4a440ac7e1a61cfd9bd75cf4b2f4772bbec406a16.png",
+        "alt": "Captura de la interfaz de Punto Deportivo Digital.",
+        "kind": "capture",
+        "fallback": "assets/images/portfolio/TEC-04/cover.svg",
+        "objectPosition": "top",
+        "note": "Captura existente del proyecto."
+      },
+      "gallery": [
+        {
+          "src": "assets/images/projects/TEC-001/ce6405032303f893412493f4a440ac7e1a61cfd9bd75cf4b2f4772bbec406a16.png",
+          "alt": "Captura de la interfaz pública de Punto Deportivo Digital.",
+          "kind": "capture",
+          "evidenceId": "IMG-ce6405032303f893412493f4a440ac7e1a61cfd9bd75cf4b2f4772bbec406a16"
+        },
+        {
+          "src": "assets/images/projects/TEC-001/0c111affc71c69550b9d4e2ceb70bcd825804a1cb417a65a77779a524d34ec08.png",
+          "alt": "Captura del panel de administración de Punto Deportivo Digital.",
+          "kind": "capture",
+          "evidenceId": "IMG-0c111affc71c69550b9d4e2ceb70bcd825804a1cb417a65a77779a524d34ec08"
+        }
+      ],
+      "longDescription": "",
+      "links": [],
+      "evidence": [
+        {
+          "id": "IMG-ce6405032303f893412493f4a440ac7e1a61cfd9bd75cf4b2f4772bbec406a16",
+          "description": "Fotografía incorporada desde el editor local",
+          "file": "assets/images/projects/TEC-001/ce6405032303f893412493f4a440ac7e1a61cfd9bd75cf4b2f4772bbec406a16.png",
+          "publicationApproved": true
+        },
+        {
+          "id": "IMG-0c111affc71c69550b9d4e2ceb70bcd825804a1cb417a65a77779a524d34ec08",
+          "description": "Fotografía incorporada desde el editor local",
+          "file": "assets/images/projects/TEC-001/0c111affc71c69550b9d4e2ceb70bcd825804a1cb417a65a77779a524d34ec08.png",
+          "publicationApproved": true
+        }
+      ],
+      "legacyEntries": [
+        {
+          "id": "TEC-001",
+          "title": "Punto Deportivo Digital",
+          "category": "Tecnología",
+          "workType": "",
+          "location": "",
+          "context": "",
+          "solution": "",
+          "participation": "",
+          "tools": [],
+          "results": [],
+          "status": "",
+          "images": [
+            {
+              "src": "assets/images/projects/TEC-001/ce6405032303f893412493f4a440ac7e1a61cfd9bd75cf4b2f4772bbec406a16.png",
+              "alt": "Frontend",
+              "caption": "",
+              "evidenceId": "IMG-ce6405032303f893412493f4a440ac7e1a61cfd9bd75cf4b2f4772bbec406a16",
+              "width": 1600,
+              "height": 900
+            },
+            {
+              "src": "assets/images/projects/TEC-001/0c111affc71c69550b9d4e2ceb70bcd825804a1cb417a65a77779a524d34ec08.png",
+              "alt": "Backend",
+              "caption": "",
+              "evidenceId": "IMG-0c111affc71c69550b9d4e2ceb70bcd825804a1cb417a65a77779a524d34ec08",
+              "width": 1600,
+              "height": 739
+            }
+          ],
+          "links": [],
+          "evidence": [
+            {
+              "id": "IMG-ce6405032303f893412493f4a440ac7e1a61cfd9bd75cf4b2f4772bbec406a16",
+              "description": "Fotografía incorporada desde el editor local",
+              "file": "assets/images/projects/TEC-001/ce6405032303f893412493f4a440ac7e1a61cfd9bd75cf4b2f4772bbec406a16.png",
+              "publicationApproved": true
+            },
+            {
+              "id": "IMG-0c111affc71c69550b9d4e2ceb70bcd825804a1cb417a65a77779a524d34ec08",
+              "description": "Fotografía incorporada desde el editor local",
+              "file": "assets/images/projects/TEC-001/0c111affc71c69550b9d4e2ceb70bcd825804a1cb417a65a77779a524d34ec08.png",
+              "publicationApproved": true
+            }
+          ],
+          "editorialStatus": "Pendiente de documentar",
+          "legacyAliases": [
+            "Punto Digital"
+          ],
+          "legacyReference": "PRY-001",
+          "visible": true,
+          "coverImage": "assets/images/projects/TEC-001/ce6405032303f893412493f4a440ac7e1a61cfd9bd75cf4b2f4772bbec406a16.png"
+        }
+      ]
+    },
+    {
+      "id": "TEC-05",
+      "title": "Goals",
+      "category": "tecnologia",
+      "type": "proyecto",
+      "description": "Aplicación de organización personal y seguimiento de objetivos, concebida para transformar ideas y metas en acciones concretas, facilitando la planificación y la revisión del progreso.",
+      "featuredRank": null,
+      "image": {
+        "src": "assets/images/projects/TEC-003/283abb9b8c58bffe4eb36580e2c8907514a502e645808a27045c9c7c4adddb31.png",
+        "alt": "Captura de la interfaz de Goals.",
+        "kind": "capture",
+        "fallback": "assets/images/portfolio/TEC-05/cover.svg",
+        "objectPosition": "top",
+        "note": "Captura existente del proyecto."
+      },
+      "gallery": [
+        {
+          "src": "assets/images/projects/TEC-003/283abb9b8c58bffe4eb36580e2c8907514a502e645808a27045c9c7c4adddb31.png",
+          "alt": "Captura de la interfaz de Goals.",
+          "kind": "capture",
+          "evidenceId": "IMG-283abb9b8c58bffe4eb36580e2c8907514a502e645808a27045c9c7c4adddb31"
+        }
+      ],
+      "longDescription": "",
+      "links": [],
+      "evidence": [
+        {
+          "id": "IMG-283abb9b8c58bffe4eb36580e2c8907514a502e645808a27045c9c7c4adddb31",
+          "description": "Fotografía incorporada desde el editor local",
+          "file": "assets/images/projects/TEC-003/283abb9b8c58bffe4eb36580e2c8907514a502e645808a27045c9c7c4adddb31.png",
+          "publicationApproved": true
+        }
+      ],
+      "legacyEntries": [
+        {
+          "id": "TEC-003",
+          "title": "Goals",
+          "category": "Tecnología",
+          "workType": "",
+          "location": "",
+          "context": "Una aplicación para lograr tus metas y no olvidar tus tareas pendientes",
+          "solution": "",
+          "participation": "",
+          "tools": [],
+          "results": [],
+          "status": "Terminado, con nuevas actualizaciones en camino",
+          "images": [
+            {
+              "src": "assets/images/projects/TEC-003/283abb9b8c58bffe4eb36580e2c8907514a502e645808a27045c9c7c4adddb31.png",
+              "alt": "Screenshot",
+              "caption": "",
+              "evidenceId": "IMG-283abb9b8c58bffe4eb36580e2c8907514a502e645808a27045c9c7c4adddb31",
+              "width": 845,
+              "height": 847
+            }
+          ],
+          "links": [],
+          "evidence": [
+            {
+              "id": "IMG-283abb9b8c58bffe4eb36580e2c8907514a502e645808a27045c9c7c4adddb31",
+              "description": "Fotografía incorporada desde el editor local",
+              "file": "assets/images/projects/TEC-003/283abb9b8c58bffe4eb36580e2c8907514a502e645808a27045c9c7c4adddb31.png",
+              "publicationApproved": true
+            }
+          ],
+          "editorialStatus": "Borrador",
+          "visible": true,
+          "coverImage": "assets/images/projects/TEC-003/283abb9b8c58bffe4eb36580e2c8907514a502e645808a27045c9c7c4adddb31.png"
+        }
+      ]
+    },
+    {
+      "id": "TEC-06",
+      "title": "Gestión digital de expedientes",
+      "category": "tecnologia",
+      "type": "proyecto",
+      "description": "Desarrollo de herramientas para organizar documentos, registrar antecedentes y apoyar el seguimiento de expedientes administrativos, facilitando el control de información y las gestiones asociadas.",
+      "featuredRank": null,
+      "image": {
+        "src": "assets/images/portfolio/TEC-06/cover.svg",
+        "alt": "Ilustración conceptual de gestión digital de expedientes; visual temporal.",
+        "kind": "temporary",
+        "fallback": "assets/images/portfolio/TEC-06/cover.svg",
+        "objectPosition": "top",
+        "note": "Ilustración editorial de referencia; no representa un trabajo ejecutado."
+      },
+      "gallery": [],
+      "longDescription": "",
+      "links": [],
+      "evidence": [],
+      "legacyEntries": []
+    },
+    {
+      "id": "DIS-01",
+      "title": "Corte y grabado láser",
+      "category": "diseno-fabricacion",
+      "type": "servicio",
+      "description": "Diseño y fabricación de piezas personalizadas mediante tecnologías de corte y grabado láser. Desarrollo de productos, elementos decorativos, señalética y soluciones adaptadas a distintos requerimientos.",
+      "featuredRank": 6,
+      "image": {
+        "src": "assets/images/portfolio/DIS-01/cover.svg",
+        "alt": "Ilustración conceptual de corte y grabado láser; visual temporal.",
+        "kind": "temporary",
+        "fallback": "assets/images/portfolio/DIS-01/cover.svg",
+        "objectPosition": "top",
+        "note": "Ilustración editorial de referencia; no representa un trabajo ejecutado."
+      },
+      "gallery": [],
+      "longDescription": "",
+      "links": [],
+      "evidence": [],
+      "legacyEntries": [
+        {
+          "id": "DIS-001",
+          "title": "Productos personalizados",
+          "category": "Diseño",
+          "workType": "",
+          "location": "",
+          "context": "",
+          "solution": "",
+          "participation": "",
+          "tools": [],
+          "results": [],
+          "status": "",
+          "images": [],
+          "links": [],
+          "evidence": [],
+          "editorialStatus": "Pendiente de documentar"
+        }
+      ]
+    },
+    {
+      "id": "DIS-02",
+      "title": "Dioramas y prototipado",
+      "category": "diseno-fabricacion",
+      "type": "servicio",
+      "description": "Creación de modelos físicos, escenarios en miniatura y prototipos que combinan diseño, materiales y técnicas de fabricación para representar ideas y desarrollar piezas con identidad propia.",
+      "featuredRank": null,
+      "image": {
+        "src": "assets/images/portfolio/DIS-02/cover.svg",
+        "alt": "Ilustración conceptual de dioramas y prototipado; visual temporal.",
+        "kind": "temporary",
+        "fallback": "assets/images/portfolio/DIS-02/cover.svg",
+        "objectPosition": "top",
+        "note": "Ilustración editorial de referencia; no representa un trabajo ejecutado."
+      },
+      "gallery": [],
+      "longDescription": "",
+      "links": [],
+      "evidence": [],
+      "legacyEntries": [
+        {
+          "id": "DIS-002",
+          "title": "Dioramas y prototipado",
+          "category": "Diseño",
+          "workType": "",
+          "location": "",
+          "context": "",
+          "solution": "",
+          "participation": "",
+          "tools": [],
+          "results": [],
+          "status": "",
+          "images": [],
+          "links": [],
+          "evidence": [],
+          "editorialStatus": "Pendiente de documentar"
+        }
+      ]
+    },
+    {
+      "id": "DIS-03",
+      "title": "Diseño y producción gráfica",
+      "category": "diseno-fabricacion",
+      "type": "servicio",
+      "description": "Creación y fabricación de productos gráficos y personalizados, integrando diseño digital, impresión, selección de materiales y procesos de terminación para obtener soluciones físicas adaptadas a cada proyecto.",
+      "featuredRank": null,
+      "image": {
+        "src": "assets/images/portfolio/DIS-03/cover.svg",
+        "alt": "Ilustración conceptual de diseño y producción gráfica; visual temporal.",
+        "kind": "temporary",
+        "fallback": "assets/images/portfolio/DIS-03/cover.svg",
+        "objectPosition": "top",
+        "note": "Ilustración editorial de referencia; no representa un trabajo ejecutado."
+      },
+      "gallery": [],
+      "longDescription": "",
+      "links": [],
+      "evidence": [],
+      "legacyEntries": []
+    },
+    {
+      "id": "LAB-01",
+      "title": "Código de Hammurabi",
+      "category": "laboratorio",
+      "type": "laboratorio",
+      "description": "Proyecto personal de investigación y divulgación histórica desarrollado como experiencia digital interactiva. Reúne el estudio de una antigua fuente jurídica con herramientas tecnológicas contemporáneas para facilitar su exploración y comprensión.",
+      "featuredRank": null,
+      "image": {
+        "src": "assets/images/portfolio/LAB-01/cover.svg",
+        "alt": "Ilustración conceptual de código de hammurabi; visual temporal.",
+        "kind": "temporary",
+        "fallback": "assets/images/portfolio/LAB-01/cover.svg",
+        "objectPosition": "top",
+        "note": "Ilustración editorial de referencia; no representa un trabajo ejecutado."
+      },
+      "gallery": [],
+      "longDescription": "",
+      "links": [],
+      "evidence": [],
+      "legacyEntries": []
+    },
+    {
+      "id": "LAB-02",
+      "title": "Expedientes del SAG",
+      "category": "laboratorio",
+      "type": "laboratorio",
+      "description": "Herramienta propia desarrollada para organizar trabajos y expedientes asociados al SAG, permitiendo estructurar documentos, registrar antecedentes y mostrar información de manera más clara a los clientes.",
+      "featuredRank": null,
+      "image": {
+        "src": "assets/images/portfolio/LAB-02/cover.svg",
+        "alt": "Ilustración conceptual de expedientes del sag; visual temporal.",
+        "kind": "temporary",
+        "fallback": "assets/images/portfolio/LAB-02/cover.svg",
+        "objectPosition": "top",
+        "note": "Ilustración editorial de referencia; no representa un trabajo ejecutado."
+      },
+      "gallery": [],
+      "longDescription": "",
+      "links": [],
+      "evidence": [],
+      "legacyEntries": []
+    }
+  ]
+}

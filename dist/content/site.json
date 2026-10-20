@@ -5,7 +5,7 @@
     "stage": "Contenido profesional incorporado en local; aprobación y publicación pendientes",
     "identity": {
       "name": "Pedro Soto Almonacid",
-      "concept": "Del análisis a la solución.",
+      "concept": "Del análisis a la solución",
       "professionalTitle": "Ingeniero Civil Industrial",
       "audiences": [
         "Empresas",
@@ -125,14 +125,32 @@
         "tools": [],
         "results": [],
         "status": "",
-        "images": [],
+        "images": [
+          {
+            "src": "assets/images/projects/ING-001/6ac51c5701f136ba1c1a038f9737e233f58db639557388b7f245dc05432cf74a.png",
+            "alt": "Levantamiento",
+            "caption": "",
+            "evidenceId": "IMG-6ac51c5701f136ba1c1a038f9737e233f58db639557388b7f245dc05432cf74a",
+            "width": 1448,
+            "height": 1086
+          }
+        ],
         "links": [],
-        "evidence": [],
-        "editorialStatus": "Alcance particular y evidencias por documentar"
+        "evidence": [
+          {
+            "id": "IMG-6ac51c5701f136ba1c1a038f9737e233f58db639557388b7f245dc05432cf74a",
+            "description": "Fotografía incorporada desde el editor local",
+            "file": "assets/images/projects/ING-001/6ac51c5701f136ba1c1a038f9737e233f58db639557388b7f245dc05432cf74a.png",
+            "publicationApproved": true
+          }
+        ],
+        "editorialStatus": "Alcance particular y evidencias por documentar",
+        "visible": true,
+        "coverImage": "assets/images/projects/ING-001/6ac51c5701f136ba1c1a038f9737e233f58db639557388b7f245dc05432cf74a.png"
       },
       {
         "id": "ING-002",
-        "title": "Proyecto de subdivisión predial rural",
+        "title": "Proyecto de subdivisión de predios rurales",
         "category": "Ingeniería",
         "workType": "Subdivisión predial rural",
         "location": "",
@@ -160,14 +178,46 @@
         "tools": [],
         "results": [],
         "status": "",
-        "images": [],
+        "images": [
+          {
+            "src": "assets/images/projects/TEC-001/ce6405032303f893412493f4a440ac7e1a61cfd9bd75cf4b2f4772bbec406a16.png",
+            "alt": "Frontend",
+            "caption": "",
+            "evidenceId": "IMG-ce6405032303f893412493f4a440ac7e1a61cfd9bd75cf4b2f4772bbec406a16",
+            "width": 1600,
+            "height": 900
+          },
+          {
+            "src": "assets/images/projects/TEC-001/0c111affc71c69550b9d4e2ceb70bcd825804a1cb417a65a77779a524d34ec08.png",
+            "alt": "Backend",
+            "caption": "",
+            "evidenceId": "IMG-0c111affc71c69550b9d4e2ceb70bcd825804a1cb417a65a77779a524d34ec08",
+            "width": 1600,
+            "height": 739
+          }
+        ],
         "links": [],
-        "evidence": [],
+        "evidence": [
+          {
+            "id": "IMG-ce6405032303f893412493f4a440ac7e1a61cfd9bd75cf4b2f4772bbec406a16",
+            "description": "Fotografía incorporada desde el editor local",
+            "file": "assets/images/projects/TEC-001/ce6405032303f893412493f4a440ac7e1a61cfd9bd75cf4b2f4772bbec406a16.png",
+            "publicationApproved": true
+          },
+          {
+            "id": "IMG-0c111affc71c69550b9d4e2ceb70bcd825804a1cb417a65a77779a524d34ec08",
+            "description": "Fotografía incorporada desde el editor local",
+            "file": "assets/images/projects/TEC-001/0c111affc71c69550b9d4e2ceb70bcd825804a1cb417a65a77779a524d34ec08.png",
+            "publicationApproved": true
+          }
+        ],
         "editorialStatus": "Pendiente de documentar",
         "legacyAliases": [
           "Punto Digital"
         ],
-        "legacyReference": "PRY-001"
+        "legacyReference": "PRY-001",
+        "visible": true,
+        "coverImage": "assets/images/projects/TEC-001/ce6405032303f893412493f4a440ac7e1a61cfd9bd75cf4b2f4772bbec406a16.png"
       },
       {
         "id": "TEC-002",
@@ -175,16 +225,69 @@
         "category": "Tecnología",
         "workType": "",
         "location": "",
-        "context": "",
+        "context": "Una gran app",
         "solution": "",
         "participation": "",
         "tools": [],
         "results": [],
         "status": "",
-        "images": [],
+        "images": [
+          {
+            "src": "assets/images/projects/TEC-002/465db79397544c20c0f2577b5a40af7b910569caf0ae34065e942552274183d6.png",
+            "alt": "Miniatura real",
+            "caption": "",
+            "evidenceId": "IMG-465db79397544c20c0f2577b5a40af7b910569caf0ae34065e942552274183d6",
+            "width": 1600,
+            "height": 900
+          }
+        ],
         "links": [],
-        "evidence": [],
-        "editorialStatus": "Pendiente de documentar"
+        "evidence": [
+          {
+            "id": "IMG-465db79397544c20c0f2577b5a40af7b910569caf0ae34065e942552274183d6",
+            "description": "Fotografía incorporada desde el editor local",
+            "file": "assets/images/projects/TEC-002/465db79397544c20c0f2577b5a40af7b910569caf0ae34065e942552274183d6.png",
+            "publicationApproved": true
+          }
+        ],
+        "editorialStatus": "Pendiente de documentar",
+        "visible": true,
+        "coverImage": "assets/images/projects/TEC-002/465db79397544c20c0f2577b5a40af7b910569caf0ae34065e942552274183d6.png"
+      },
+      {
+        "id": "TEC-003",
+        "title": "Goals",
+        "category": "Tecnología",
+        "workType": "",
+        "location": "",
+        "context": "Una aplicación para lograr tus metas y no olvidar tus tareas pendientes",
+        "solution": "",
+        "participation": "",
+        "tools": [],
+        "results": [],
+        "status": "Terminado, con nuevas actualizaciones en camino",
+        "images": [
+          {
+            "src": "assets/images/projects/TEC-003/283abb9b8c58bffe4eb36580e2c8907514a502e645808a27045c9c7c4adddb31.png",
+            "alt": "Screenshot",
+            "caption": "",
+            "evidenceId": "IMG-283abb9b8c58bffe4eb36580e2c8907514a502e645808a27045c9c7c4adddb31",
+            "width": 845,
+            "height": 847
+          }
+        ],
+        "links": [],
+        "evidence": [
+          {
+            "id": "IMG-283abb9b8c58bffe4eb36580e2c8907514a502e645808a27045c9c7c4adddb31",
+            "description": "Fotografía incorporada desde el editor local",
+            "file": "assets/images/projects/TEC-003/283abb9b8c58bffe4eb36580e2c8907514a502e645808a27045c9c7c4adddb31.png",
+            "publicationApproved": true
+          }
+        ],
+        "editorialStatus": "Borrador",
+        "visible": true,
+        "coverImage": "assets/images/projects/TEC-003/283abb9b8c58bffe4eb36580e2c8907514a502e645808a27045c9c7c4adddb31.png"
       },
       {
         "id": "DIS-001",
@@ -250,7 +353,7 @@
     "cv": {
       "available": false,
       "file": "",
-      "summary": "La formación y trayectoria confirmadas se pueden consultar en esta sección. No se ofrece actualmente un CV descargable."
+      "summary": "El CV definitivo está pendiente de incorporar. La formación y trayectoria confirmadas se pueden consultar en esta sección."
     },
     "contact": {
       "email": "sotopedroid@gmail.com",
